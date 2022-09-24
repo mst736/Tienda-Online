@@ -1,0 +1,102 @@
+<!--PÁGINA DE PRODUCTOS-->
+
+<doctype html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--esta linea hace que la pagina se pueda visualizar en cualquier pantalla (responsive)-->
+        <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico"> <!--favinicon es una imagenn enlazada que se mostrará en la pestaña de navegación-->
+
+        <title>Título</title>
+        <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <meta name="keywords"    content="palabras clave, separadas, por comas">
+
+        <link href="style.css" rel="stylesheet"> <!--enlace interno al archivo style.css tipo de recurso a cargar etiqueta con autocierra -->
+    </head>
+    
+   
+    <body>
+
+        <header>
+            <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
+                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                    <div class="header-column-icon"></div><!--ICONO EMPRESA-->
+                    <div class="header-column-title"></div><!--TÍTULO-->
+                </div>
+                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                    <ul>
+                    <li></li><!--INICIO-->
+                    <li></li><!--RESERVA-->
+                    <li></li><!--CONTACTO-->
+                    </ul>
+                </div>
+            </div>
+             
+        </header>
+
+        <main>
+            <div><!--DIV SHOPPING CART-->
+                <div></div><!--DIV TÍTULO CARRITO DE LA COMPRA-->
+                <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
+                    <tr><!--CAMPOS CABECERA DE LA TABLA-->
+                        <th></th><!--NOMBRE CAMPO TABLA-->
+                        <th>Producto</th><!--NOMBRE CAMPO TABLA-->
+                        <th>Precio</th><!--NOMBRE CAMPO TABLA-->
+                        <th>Días</th><!--NOMBRE CAMPO TABLA-->
+                    </tr>
+                    <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO PRODUCTOS HAYAMOS SELECCIONADO EN RESERVA-->
+                      <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
+                      <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
+                      <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE PRODUCTOS--></td>
+                      <td><!--SELECTOR DE DÍAS-->
+                        <div class="product-quantity-selector"><!--SELECTOR DE DÍAS-->
+                            <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
+                            <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
+                            <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
+                        </div>
+                     </td>
+                    </tr>
+                </table>
+                <div><!--RESUMEN DE LA COMPRA-->
+                    <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
+                    <tr>
+                        <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
+                    </tr>
+                    <tr><!--FILA COMPRA SIN IVA-->
+
+                      <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
+                      <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
+                     
+                    </tr>
+                    <tr><!--FILA IMPORTE IVA-->
+
+                        <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
+                        <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
+                       
+                      </tr><tr><!--FILA COMPRA SIN IVA-->
+
+                        <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
+                        <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
+                       
+                      </tr><tr><!--FILA TOTAL COMPRA-->
+
+                        <td>Total Compra</td><!--TÍTULO TOTAL COMPRA-->
+                        <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
+                       
+                      </tr>
+                    </table>
+                </div>
+                <div></div><!--DIV VOLVER Y COMENZAR-->
+            </div>
+            
+        </main>
+
+        <footer>
+            <div class="footer"><p></p></div>FOOTER COPYRIGHT-->
+        </footer>
+          
+    </body>
+
+</html>
