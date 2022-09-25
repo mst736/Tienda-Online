@@ -1,4 +1,4 @@
-<!--PÁGINA DE CARRITO DE LA COMPRA-->
+<!--PÁGINA DE FINALIZAR COMPRA-->
 
 <doctype html>
 
@@ -37,29 +37,20 @@
         </header>
 
         <main>
-            <div class="shoppingcart"><!--DIV SHOPPING CART-->
-                <div class="product-column-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
-                <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
-                    <tr><!--CAMPOS CABECERA DE LA TABLA-->
-                        <th></th><!--NOMBRE CAMPO TABLA-->
-                        <th>Producto</th><!--NOMBRE CAMPO TABLA-->
-                        <th>Precio</th><!--NOMBRE CAMPO TABLA-->
-                        <th>Días</th><!--NOMBRE CAMPO TABLA-->
-                    </tr>
-                    <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO PRODUCTOS HAYAMOS SELECCIONADO EN RESERVA-->
-                      <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
-                      <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
-                      <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE PRODUCTOS--></td>
-                      <td><!--SELECTOR DE DÍAS-->
-                        <div class="product-quantity-selector"><!--SELECTOR DE DÍAS-->
-                            <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
-                            <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
-                            <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
-                        </div>
-                     </td>
-                    </tr>
-                </table>
-                <div class="shoppingcart-summary"><!--RESUMEN DE LA COMPRA-->
+            <div class="shoppingcartcheckout"><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS PRODUCTOS -->
+                <div class="product-column-title">Finalizar Compra</div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+                <div class="shoppingcartcheckout-form"><!--FORMULARIO A RELLENAR POR EL CLIENTE PARA CONFIRMAR LA COMPRA -->
+                    <div class="shoppingcartcheckout-form-name"></div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-Surname"></div><!--CAMPO APELLIDOS DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-phonenumber"></div><!--CAMPO TELÉFONO DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-email"></div><!--CAMPO EMAIL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-city"></div><!--CAMPO CIUDAD DEL FORMULARIO (MENÚ DESPLEGABLE, INTENTAR PROGRAMAR PARA QUE CUANDO INTRODUZCAS EL CÓDIGO POSTAL AUTOMÁTICAMENTE TE SELECCIONE LA CIUDAD), LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-zipcode"></div><!--CAMPO CÓDIGO POSTAL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    <div class="shoppingcartcheckout-form-adress"></div><!--CAMPO Dirección DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                </div>
+                
+    
+                <div class="shoppingcart-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
                     <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
                     <tr>
                         <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
@@ -87,17 +78,21 @@
                        
                       </tr>
                     </table>
+                    <ul> <!--CREAR UNA RADIO BUTTONS LIST PARA SELECCIONAR EL MÉTODO DE PAGO-->
+                        <li>Transferencia bancaria</li>
+                        <li>Paypal</li>
+                        <li>Tarjeta de crédito</li>
+                    </ul>
                 
-                    <div class="shoppingcart-summary-returnandshopbuttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
-                        <div class="product-column-addtocartbutton">Volver</div><!--CLASE REUTILIZADA DEL ADDTOCARTBUTTON DE PÁGINA PRODUCTO-->
-                        <div class="product-column-addtocartbutton">Comprar</div><!--CLASE REUTILIZADA DEL ADDTOCARTBUTTON DE PÁGINA PRODUCTO-->
+                    <div class="product-column-addtocartbutton">Pagar</div><!--BOTÓN PAGO DE LA COMPRA-->
+                    <div class="product-column-addtocartbutton">Volver al paso anterior</div><!--BOTÓN VOLVER AL PASO ANTERIOR-->
                 </div>
+
             </div>
-            
         </main>
 
         <footer>
-            <div class="footer"><p></p></div>FOOTER COPYRIGHT-->
+            <div class="footer"><p></p></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>
