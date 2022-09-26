@@ -21,16 +21,24 @@
 
         <header>
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
-                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-title"></div><!--TÍTULO-->
-                </div>
-                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
-                    <ul>
-                    <li></li><!--INICIO-->
-                    <li></li><!--RESERVA-->
-                    <li></li><!--CONTACTO-->
-                    </ul>
+                <div class="two-columns"></div>
+                    <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                        <div class="two-columns">
+                            <div class="column">
+                                <div class="header-icon">icono</div><!--ICONO EMPRESA-->
+                            </div>
+                            <div class="column">
+                                <div class="header-title">titulo</div><!--TÍTULO-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                        <ul>
+                        <li></li><!--INICIO-->
+                        <li></li><!--RESERVA-->
+                        <li></li><!--CONTACTO-->
+                        </ul>
+                    </div>
                 </div>
             </div>
              
@@ -38,50 +46,59 @@
 
         <main>
             <div class="products"><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS products -->
-                <div class="products-column">
-                    <div class="products-category"><!--COLUMNA CATEGORIAS (TEXTO CATEGORÍA Y LISTADO NO NUMERADO UL DE CATEGORÍAS)-->
-                        <div class="products-category-text"></div><!--TEXTO CATEGORÍA-->
-                        <ul><!--LISTADO NO NUMERADO UL DE CATEGORÍAS-->
-                            <li></li><!--TODAS-->
-                            <li></li><!--LANCHAS-->
-                            <li></li><!--LLAUTS-->
-                            <li></li><!--VELEROS-->
-                        </ul>
+                <div class="two-columns">
+                    <div class="products-column">
+                        <div class="column">
+                            <div class="products-category"><!--COLUMNA CATEGORIAS (TEXTO CATEGORÍA Y LISTADO NO NUMERADO UL DE CATEGORÍAS)-->
+                                <div class="products-category-text"></div><!--TEXTO CATEGORÍA-->
+                                <ul><!--LISTADO NO NUMERADO UL DE CATEGORÍAS-->
+                                    <li></li><!--TODAS-->
+                                    <li></li><!--LANCHAS-->
+                                    <li></li><!--LLAUTS-->
+                                    <li></li><!--VELEROS-->
+                                </ul>
+                            </div>    
+                        </div>
                     </div>
-                </div>
-                
     
-                <div class="products-column"><!--COLUMNA RESULTADOS products -->
+                    <div class="products-column"><!--COLUMNA RESULTADOS products -->
+                        <div class="column">
+                            <div class="products-results"><!--DIV QUE ALOJA APARTADO EÑSEÑANDO Y SELECTOR FILTRAR CATEGORÍA-->
+                                <div class="two-columns">
+                                    <div class="column">
+                                        <div class="products-results-counter"></div><!--APARTADO SE ESTÁN ENSEÑANDO 20 DE 100 products -->
+                                    </div>
+                                    <div class="column">
+                                        <div class="products-results-drop-down"></div><!--SELECTOR PARA FILTRAR CATEGORÍA --></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-gallery"><!--FILA RESULTADOS(REPLICAR EN FUNCIÓN DE LOS RESULTADOS FILTRADOS)-->
+                                <div class="three-columns">
+                                    <div class="products-gallery-item"><!--RESULTADO PRODUCTO-->
+                                        <div class="column">
+                                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
+                                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
+                                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
+                                            <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                                        </div>
+                                        <div class="column">
+                                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
+                                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
+                                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
+                                            <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                                        </div>
+                                        <div class="column">
+                                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
+                                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
+                                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
+                                            <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                                        </div>
 
-                    <div class="products-results"><!--DIV QUE ALOJA APARTADO EÑSEÑANDO Y SELECTOR FILTRAR CATEGORÍA-->
-
-                        <div class="products-results-counter"></div><!--APARTADO SE ESTÁN ENSEÑANDO 20 DE 100 products -->
-                        <div class="products-results-drop-down"></div><!--SELECTOR PARA FILTRAR CATEGORÍA --></div>
-                    </div>
-                    <div class="products-gallery"><!--FILA RESULTADOS(REPLICAR EN FUNCIÓN DE LOS RESULTADOS FILTRADOS)-->
-
-                        <div class="products-gallery-item"><!--RESULTADO PRODUCTO-->
-
-                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
-                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
-                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
-                            <div class="button"></div><!--BOTÓN VER PRODUCTO-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="products-gallery-item"><!--RESULTADO PRODUCTO-->
-
-                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
-                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
-                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
-                            <div class="button"></div><!--BOTÓN VER PRODUCTO-->
-                        </div>
-                        <div class="products-gallery-item"><!--RESULTADO PRODUCTO-->
-
-                            <div class="products-gallery-item-price"></div><!--PRECIO POR DÍA PRODUCTO-->
-                            <div class="products-gallery-item-image"></div><!--IMAGEN PRODUCTO-->
-                            <div class="products-gallery-item-description"></div><!--DESCRIPCIÓN PRODUCTO-->
-                            <button class="button">Reservar</button>
-                        </div>
-                        
                     </div>
                 </div>
 
@@ -89,7 +106,7 @@
         </main>
 
         <footer>
-            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
+            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>

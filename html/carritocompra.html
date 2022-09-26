@@ -21,16 +21,24 @@
 
         <header>
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
-                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
-                </div>
-                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
-                    <ul>
-                    <li></li><!--INICIO-->
-                    <li></li><!--RESERVA-->
-                    <li></li><!--CONTACTO-->
-                    </ul>
+                <div class="two-columns"></div>
+                    <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                        <div class="two-columns">
+                            <div class="column">
+                                <div class="header-icon">icono</div><!--ICONO EMPRESA-->
+                            </div>
+                            <div class="column">
+                                <div class="header-title">titulo</div><!--TÍTULO-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                        <ul>
+                        <li></li><!--INICIO-->
+                        <li></li><!--RESERVA-->
+                        <li></li><!--CONTACTO-->
+                        </ul>
+                    </div>
                 </div>
             </div>
              
@@ -38,66 +46,85 @@
 
         <main>
             <div class="shopping-cart"><!--DIV SHOPPING CART-->
-                <div class="product-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
-                <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
-                    <tr><!--CAMPOS CABECERA DE LA TABLA-->
-                        <th></th><!--NOMBRE CAMPO TABLA-->
-                        <th>Producto</th><!--NOMBRE CAMPO TABLA-->
-                        <th>Precio</th><!--NOMBRE CAMPO TABLA-->
-                        <th>Días</th><!--NOMBRE CAMPO TABLA-->
-                    </tr>
-                    <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
-                      <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
-                      <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
-                      <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products--></td>
-                      <td><!--SELECTOR DE DÍAS-->
-                        <div class="product-quantity-selector"><!--SELECTOR DE DÍAS-->
-                            <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
-                            <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
-                            <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
+                <div class="one-column">
+                    <div class="column">
+                        <div class="product-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+                        <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
+                            <tr><!--CAMPOS CABECERA DE LA TABLA-->
+                                <th></th><!--NOMBRE CAMPO TABLA-->
+                                <th>Producto</th><!--NOMBRE CAMPO TABLA-->
+                                <th>Precio</th><!--NOMBRE CAMPO TABLA-->
+                                <th>Días</th><!--NOMBRE CAMPO TABLA-->
+                            </tr>
+                            <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
+                                <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
+                                <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
+                                <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products--></td>
+                                <td><!--SELECTOR DE DÍAS-->
+                                    <div class="product-quantity-selector">
+                                        <div class="three-columns"><!--SELECTOR DE DÍAS-->
+                                            <div class="column">
+                                                <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA-->
+                            <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
+                                <tr>
+                                    <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
+                                </tr>
+                                <tr><!--FILA COMPRA SIN IVA-->
+
+                                <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
+                                <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
+                                
+                                </tr>
+                                <tr><!--FILA IMPORTE IVA-->
+
+                                    <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
+                                    <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
+                                
+                                </tr><tr><!--FILA COMPRA SIN IVA-->
+
+                                    <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
+                                    <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
+                                
+                                </tr><tr><!--FILA TOTAL COMPRA-->
+
+                                    <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
+                                    <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
+                                
+                                </tr>
+                            </table>
+                        
+                            <div class="shopping-cart-summary-return-and-shop-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
+                                <div class="two-columns">
+                                    <div class="column">
+                                        <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                                    </div>
+                                    <div class="column">
+                                        <button class="button">Comprar</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </td>
-                    </tr>
-                </table>
-                <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA-->
-                    <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
-                    <tr>
-                        <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
-                    </tr>
-                    <tr><!--FILA COMPRA SIN IVA-->
-
-                      <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
-                      <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
-                     
-                    </tr>
-                    <tr><!--FILA IMPORTE IVA-->
-
-                        <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
-                        <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
-                       
-                      </tr><tr><!--FILA COMPRA SIN IVA-->
-
-                        <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
-                        <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
-                       
-                      </tr><tr><!--FILA TOTAL COMPRA-->
-
-                        <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
-                        <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
-                       
-                      </tr>
-                    </table>
-                
-                    <div class="shopping-cart-summary-return-and-shop-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
-                        <div class="button">Volver</div><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
-                        <div class="button">Comprar</div><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                    </div>
                 </div>
             </div>
             
         </main>
 
         <footer>
-            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
+            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>

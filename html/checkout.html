@@ -21,16 +21,24 @@
 
         <header>
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
-                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
-                </div>
-                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
-                    <ul>
-                    <li></li><!--INICIO-->
-                    <li></li><!--RESERVA-->
-                    <li></li><!--CONTACTO-->
-                    </ul>
+                <div class="two-columns"></div>
+                    <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                        <div class="two-columns">
+                            <div class="column">
+                                <div class="header-icon">icono</div><!--ICONO EMPRESA-->
+                            </div>
+                            <div class="column">
+                                <div class="header-title">titulo</div><!--TÍTULO-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                        <ul>
+                        <li></li><!--INICIO-->
+                        <li></li><!--RESERVA-->
+                        <li></li><!--CONTACTO-->
+                        </ul>
+                    </div>
                 </div>
             </div>
              
@@ -38,63 +46,70 @@
 
         <main>
             <div class="checkout"><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS products -->
-                <div class="product-title">Finalizar Compra</div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
-                <form>
-                <div class="checkout-form"><!--FORMULARIO A RELLENAR POR EL CLIENTE PARA CONFIRMAR LA COMPRA -->
-                    <div class="checkout-form-name"></div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-Surname"></div><!--CAMPO APELLIDOS DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-phonenumber"></div><!--CAMPO TELÉFONO DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-email"></div><!--CAMPO EMAIL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-city"></div><!--CAMPO CIUDAD DEL FORMULARIO (MENÚ DESPLEGABLE, INTENTAR PROGRAMAR PARA QUE CUANDO INTRODUZCAS EL CÓDIGO POSTAL AUTOMÁTICAMENTE TE SELECCIONE LA CIUDAD), LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-zipcode"></div><!--CAMPO CÓDIGO POSTAL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    <div class="checkout-form-adress"></div><!--CAMPO Dirección DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                <div class="one-column">
+                    <div class="product-title">Finalizar Compra</div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+                    
+                    <form> <!--INSERTAR ELEMENTO FORMULARIO -->
+                        <div class="two-columns">
+                            <div class="column">
+                                <div class="checkout-form"><!--FORMULARIO A RELLENAR POR EL CLIENTE PARA CONFIRMAR LA COMPRA -->
+                                    <div class="checkout-form-name"></div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-Surname"></div><!--CAMPO APELLIDOS DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-phonenumber"></div><!--CAMPO TELÉFONO DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-email"></div><!--CAMPO EMAIL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-city"></div><!--CAMPO CIUDAD DEL FORMULARIO (MENÚ DESPLEGABLE, INTENTAR PROGRAMAR PARA QUE CUANDO INTRODUZCAS EL CÓDIGO POSTAL AUTOMÁTICAMENTE TE SELECCIONE LA CIUDAD), LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-zipcode"></div><!--CAMPO CÓDIGO POSTAL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                    <div class="checkout-form-adress"></div><!--CAMPO Dirección DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                </div>
+                            </div>
+                            <div class="checkout-summary">
+                                <div class="column"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
+                                    <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
+                                    <tr>
+                                        <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
+                                    </tr>
+                                    <tr><!--FILA COMPRA SIN IVA-->
+
+                                    <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
+                                    <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
+                                    
+                                    </tr>
+                                    <tr><!--FILA IMPORTE IVA-->
+
+                                        <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
+                                        <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
+                                    
+                                    </tr><tr><!--FILA COMPRA SIN IVA-->
+
+                                        <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
+                                        <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
+                                    
+                                    </tr><tr><!--FILA TOTAL COMPRA-->
+
+                                        <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
+                                        <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
+                                    
+                                    </tr>
+                                    </table>
+                                    <ul> <!--CREAR UNA RADIO BUTTONS LIST PARA SELECCIONAR EL MÉTODO DE PAGO-->
+                                        <li>Transferencia bancaria</li>
+                                        <li>Paypal</li>
+                                        <li>Tarjeta de crédito</li>
+                                    </ul>
+                                
+                                    <button class="button">Volver al paso anterior</button><!--BOTÓN PAGO DE LA COMPRA-->
+                                    <button class="button">Pagar</button><!--BOTÓN VOLVER AL PASO ANTERIOR-->
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
                 </div>
-                
-    
-                <div class="checkout-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
-                    <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
-                    <tr>
-                        <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
-                    </tr>
-                    <tr><!--FILA COMPRA SIN IVA-->
-
-                      <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
-                      <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
-                     
-                    </tr>
-                    <tr><!--FILA IMPORTE IVA-->
-
-                        <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
-                        <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
-                       
-                      </tr><tr><!--FILA COMPRA SIN IVA-->
-
-                        <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
-                        <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
-                       
-                      </tr><tr><!--FILA TOTAL COMPRA-->
-
-                        <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
-                        <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
-                       
-                      </tr>
-                    </table>
-                    <ul> <!--CREAR UNA RADIO BUTTONS LIST PARA SELECCIONAR EL MÉTODO DE PAGO-->
-                        <li>Transferencia bancaria</li>
-                        <li>Paypal</li>
-                        <li>Tarjeta de crédito</li>
-                    </ul>
-                
-                    <div class="button">Pagar</div><!--BOTÓN PAGO DE LA COMPRA-->
-                    <div class="button">Volver al paso anterior</div><!--BOTÓN VOLVER AL PASO ANTERIOR-->
-                </form>
-                </div>
-
             </div>
         </main>
 
         <footer>
-            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
+            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>

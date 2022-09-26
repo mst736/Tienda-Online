@@ -21,16 +21,24 @@
 
         <header>
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
-                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
-                </div>
-                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
-                    <ul>
-                    <li></li><!--INICIO-->
-                    <li></li><!--RESERVA-->
-                    <li></li><!--CONTACTO-->
-                    </ul>
+                <div class="two-columns"></div>
+                    <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                        <div class="two-columns">
+                            <div class="column">
+                                <div class="header-icon">icono</div><!--ICONO EMPRESA-->
+                            </div>
+                            <div class="column">
+                                <div class="header-title">titulo</div><!--TÍTULO-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                        <ul>
+                        <li></li><!--INICIO-->
+                        <li></li><!--RESERVA-->
+                        <li></li><!--CONTACTO-->
+                        </ul>
+                    </div>
                 </div>
             </div>
              
@@ -38,42 +46,75 @@
 
         <main>
             <div class="product"><!--COLUMNA IMAGEN GRANDE + MINIATURAS Y COLUMNA DESCRIPCIÓN SELECCIÓN DÍAS DE PRODUCTO-->
-                <div class="product-column"><!--COLUMNA IMAGEN GRANDE + MINIATURAS-->
-                    <div class="product-image" ></div>
-                        <div class="slider-gallery-image-big" ></div><!--IMAGEN GRANDE-->
-                        <div class="slider-gallery-miniatures"><!--DIV 5 MINIATURAS-->
-                            <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
-                            <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
-                            <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
-                            <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
-                            <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
-                        </div>
-                </div>
-    
-                <div class="product-column"><!--COLUMNA DESCRIPCIÓN SELECCIÓN DÍAS DE PRODUCTO -->
+                <div class="one-column">
+                    <div class="two-columns">
+                        <div class="product-column"><!--COLUMNA IMAGEN GRANDE + MINIATURAS-->
+                            <div class="column">
+                                <div class="product-image" >
+                                    <div class="slider-gallery-image-big" ></div><!--IMAGEN GRANDE-->
+                                    <div class="slider-gallery-miniatures"><!--DIV 5 MINIATURAS-->
+                                        <div class="four-columns">
+                                            <div class="column">
+                                                <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
+                                            </div>
+                                            <div class="column">
+                                                <div class="slider-gallery-miniatures-item"></div><!--MINIATURA-->
+                                            </div>
 
-                    <div class="product-title"></div><!--TÍTULO PRODUCTO-->
-                    <div class="product-price"></div><!--EUROS POR DÍA-->
-                    <div class="product-description"><p></p></div><!--PÁRRAFO DESCRIPCIÓN DEL PRODUCTO-->
-                    
-                    <div class="product-quantity"><!--FILA TEXTO CANTIDAD DE DÍAS Y SELECTOR DE DÍAS-->
-                        <div class="product-quantity-text"></div><!--TEXTO CANTIDAD DE DÍAS-->
-                        <div class="product-quantity-selector"><!--SELECTOR DE DÍAS-->
-                            <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
-                            <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
-                            <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+            
+                        <div class="product-column"><!--COLUMNA DESCRIPCIÓN SELECCIÓN DÍAS DE PRODUCTO -->
+                            <div class="one-column">
+                                <div class="product-title"></div><!--TÍTULO PRODUCTO-->
+                                <div class="product-price"></div><!--EUROS POR DÍA-->
+                                <div class="product-description"><p></p></div><!--PÁRRAFO DESCRIPCIÓN DEL PRODUCTO-->
+                                
+                                <div class="product-quantity"><!--FILA TEXTO CANTIDAD DE DÍAS Y SELECTOR DE DÍAS-->
+                                    <div class="two-columns">
+                                        <div class="column">
+                                            <div class="product-quantity-text"></div><!--TEXTO CANTIDAD DE DÍAS-->
+                                        </div>
+                                        <div class="column">
+                                            <div class="product-quantity-selector">
+                                                <div class="three-columns"><!--SELECTOR DE DÍAS-->
+                                                    <div class="column">
+                                                        <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
 
+                                <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="button"></div><!--BOTÓN RESERVAR-->
-                </div>
-
+                </div>           
             </div>
         </main>
 
         <footer>
-            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
+            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>

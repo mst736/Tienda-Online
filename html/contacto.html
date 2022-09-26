@@ -19,13 +19,19 @@
    
     <body>
 
-        <header>
-            <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
-                <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
+        <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
+            <div class="two-columns"></div>
+                <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+                    <div class="two-columns">
+                        <div class="column">
+                            <div class="header-icon">icono</div><!--ICONO EMPRESA-->
+                        </div>
+                        <div class="column">
+                            <div class="header-title">titulo</div><!--TÍTULO-->
+                        </div>
+                    </div>
                 </div>
-                <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+                <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
                     <ul>
                     <li></li><!--INICIO-->
                     <li></li><!--RESERVA-->
@@ -33,39 +39,42 @@
                     </ul>
                 </div>
             </div>
-             
-        </header>
+        </div>
+         
+    </header>
 
         <main>
-            <div class=""><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS products -->
-                
-                <div class="product-title">Contacte con Nosotros</div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
-                
-                <ul> <!--LISTA NO NUMERADA CON INFORMACIÓN CONTACTO DE LA TIENDA ONLINE-->
-                    <li>Número de teléfono</li>
-                    <li>info@correo.com</li>
-                    <li>Dirección Empresa</li>
-                    <li>Horario Apertura</li>
-                    <li>Horario</li>
-                </ul>
-                <div class="shoppingcart-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
-                    <div class="checkout-form"><!--FORMULARIO DE CONTACTO A RELLENAR POR EL CLIENTE ME LO TRAJE DE PÁGINA CHECKOUT -->
-                        <div class="checkout-form-name"></div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                        <div class="checkout-form-Surname"></div><!--CAMPO APELLIDOS DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                        <div class="checkout-form-phonenumber"></div><!--CAMPO TELÉFONO DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                        <div class="checkout-form-email"></div><!--CAMPO EMAIL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                        <div class="checkout-form-message"></div><!--CAMPO MENSAJE DEL FORMULARIO (MENÚ DESPLEGABLE, INTENTAR PROGRAMAR PARA QUE CUANDO INTRODUZCAS EL CÓDIGO POSTAL AUTOMÁTICAMENTE TE SELECCIONE LA CIUDAD), LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                    </div>
-                
-                    <div class="button">Enviar</div><!--BOTÓN ENVÍO FORMULARIO DE CONTACTO ME LO  TRAJE DE PÁGINA CHECKOUT-->
-                
+            <div class="one-column"><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS products -->
+                <div class="column">
+                    <div class="product-title">Contacte con Nosotros</div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+                    
+                    <ul> <!--LISTA NO NUMERADA CON INFORMACIÓN CONTACTO DE LA TIENDA ONLINE-->
+                        <li>Número de teléfono</li>
+                        <li>info@correo.com</li>
+                        <li>Dirección Empresa</li>
+                        <li>Horario Apertura</li>
+                        <li>Horario</li>
+                    </ul>
+                    <form>
+                        <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
+                            <div class="checkout-form"><!--FORMULARIO DE CONTACTO A RELLENAR POR EL CLIENTE ME LO TRAJE DE PÁGINA CHECKOUT -->
+                                <div class="checkout-form-name"></div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                <div class="checkout-form-Surname"></div><!--CAMPO APELLIDOS DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                <div class="checkout-form-phonenumber"></div><!--CAMPO TELÉFONO DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                <div class="checkout-form-email"></div><!--CAMPO EMAIL DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                                <div class="checkout-form-message"></div><!--CAMPO MENSAJE DEL FORMULARIO (MENÚ DESPLEGABLE, INTENTAR PROGRAMAR PARA QUE CUANDO INTRODUZCAS EL CÓDIGO POSTAL AUTOMÁTICAMENTE TE SELECCIONE LA CIUDAD), LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                            </div>
+                        
+                            <button class="button">Enviar</button><!--BOTÓN ENVÍO FORMULARIO DE CONTACTO ME LO  TRAJE DE PÁGINA CHECKOUT-->
+                        </div>
+                    </form>
                 </div>
 
             </div>
         </main>
 
         <footer>
-            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
+            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>
