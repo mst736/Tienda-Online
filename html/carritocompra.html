@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!--esta linea hace que la pagina se pueda visualizar en cualquier pantalla (responsive)-->
         <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico"> <!--favinicon es una imagenn enlazada que se mostrará en la pestaña de navegación-->
 
-        <title>Título</title>
+        <title>Carrito de la Compra</title>
         <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords"    content="palabras clave, separadas, por comas">
 
@@ -22,8 +22,8 @@
         <header>
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
                 <div class="header-column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                    <div class="header-column-icon"></div><!--ICONO EMPRESA-->
-                    <div class="header-column-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
+                    <div class="header-icon"></div><!--ICONO EMPRESA-->
+                    <div class="header-title">MI TIENDA ONLINE DE PRUEBA</div><!--TÍTULO-->
                 </div>
                 <div class="header-column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
                     <ul>
@@ -37,8 +37,8 @@
         </header>
 
         <main>
-            <div class="shoppingcart"><!--DIV SHOPPING CART-->
-                <div class="product-column-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+            <div class="shopping-cart"><!--DIV SHOPPING CART-->
+                <div class="product-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
                 <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
                     <tr><!--CAMPOS CABECERA DE LA TABLA-->
                         <th></th><!--NOMBRE CAMPO TABLA-->
@@ -46,10 +46,10 @@
                         <th>Precio</th><!--NOMBRE CAMPO TABLA-->
                         <th>Días</th><!--NOMBRE CAMPO TABLA-->
                     </tr>
-                    <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO PRODUCTOS HAYAMOS SELECCIONADO EN RESERVA-->
+                    <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
                       <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
                       <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
-                      <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE PRODUCTOS--></td>
+                      <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products--></td>
                       <td><!--SELECTOR DE DÍAS-->
                         <div class="product-quantity-selector"><!--SELECTOR DE DÍAS-->
                             <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
@@ -59,7 +59,7 @@
                      </td>
                     </tr>
                 </table>
-                <div class="shoppingcart-summary"><!--RESUMEN DE LA COMPRA-->
+                <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA-->
                     <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
                     <tr>
                         <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
@@ -88,16 +88,16 @@
                       </tr>
                     </table>
                 
-                    <div class="shoppingcart-summary-returnandshopbuttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
-                        <div class="product-column-addtocartbutton">Volver</div><!--CLASE REUTILIZADA DEL ADDTOCARTBUTTON DE PÁGINA PRODUCTO-->
-                        <div class="product-column-addtocartbutton">Comprar</div><!--CLASE REUTILIZADA DEL ADDTOCARTBUTTON DE PÁGINA PRODUCTO-->
+                    <div class="shopping-cart-summary-return-and-shop-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
+                        <div class="product-add-to-cart-button">Volver</div><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
+                        <div class="product-add-to-cart-button">Comprar</div><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
                 </div>
             </div>
             
         </main>
 
         <footer>
-            <div class="footer"><p></p></div>FOOTER COPYRIGHT-->
+            <div class="footer"><p>@2022</p><p>enlace a una web de verdad</p></div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>
