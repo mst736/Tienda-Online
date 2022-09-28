@@ -1,5 +1,6 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+/* Layout */
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -261,7 +262,7 @@ a:hover, a:focus {
     outline-offset: 0;
 }
 
-/* Layout */
+
 
 /* Columns */
 
@@ -345,251 +346,151 @@ footer{
 
 /* Components */ /*SOLTAR AQUI TODOS LOS DIVS CREADOS EN CADA PÁGINA*/
 
-/* Home */
-class="header"
-class="two-columns"
-class="column"
-class="header-logo"
-class="header-logo-icon"
-class="header-logo-title"
-class="column"
-class="header-menu"
-class="home"
-class="one-column"
-class="column"
-class="slider"
-class="slider-image"
-class="slider-title"
-class="slider-button"
-class="button"
-class="featured-services"
-class="one-column"
-class="column"
-class="featured-services-title"
-class="featured-services-gallery"
-class="four-columns"
-class="column"
-class="featured-services-gallery-item"
-class="featured-services-gallery-item-image"
-class="featured-services-gallery-item-call-to-action"
-class="featured-services-gallery-item-category"
-class="featured-services-gallery-item-description"
-class="column"
-class="featured-services-gallery-item"
-class="featured-services-gallery-item-image"
-class="featured-services-gallery-item-call-to-action"
-class="featured-services-gallery-item-category"
-class="featured-services-gallery-item-description"
-class="column"
-class="featured-services-gallery-item"
-class="featured-services-gallery-item-image"
-class="featured-services-gallery-item-call-to-action"
-class="featured-services-gallery-item-category"
-class="featured-services-gallery-item-description"
-class="column"
-class="featured-services-gallery-item"
-class="featured-services-gallery-item-image"
-class="featured-services-gallery-item-call-to-action"
-class="featured-services-gallery-item-category"
-class="featured-services-gallery-item-description"
-class="two-columns"
-class="banner-text"
-class="column"
-class="banner-text-description"
-class="column"
-class="banner-text-image"
-class="footer"
-class="one-column"
-class="column"
-/* carritocompra */
-class="header"
-class="two-columns"
-class="column"
-class="header-logo"
-class="header-logo-icon"
-class="header-logo-title"
-class="column"
-class="header-menu"
-class="shopping-cart"
-class="one-column"
-class="column"
-class="page-title"
-class="shopping-cart-table"
-class="product-quantity-selector"
-class="product-quantity-selector-minus"
-class="product-quantity-selector-value"
-class="input-text qty text"
-class="product-quantity-selector-plus"
-class="shopping-cart-summary"
-class="shopping-cart-resume-buttons"
-class="two-columns"
-class="column"
-class="shopping-cart-resume-button"
-class="button"
-class="column"
-class="shopping-cart-resume-button"
-class="button"
-class="footer"
-class="one-column"
-class="column"
-/* checkout */
-class="header"
-class="two-columns"
-class="column"
-class="header-logo"
-class="header-logo-icon"
-class="header-logo-title"
-class="column"
-class="header-menu"
-class="checkout"
-class="one-column"
-class="page-title"
-class="two-columns"
-class="column"
-class="checkout-form"
-class="two-columns"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="two-columns"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="two-columns"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="one-column"
-class="column"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="reset-button"
-class="column"
-class="checkout-summary"
-class="checkout-form-payment-methods"
-class="form-button"
-class="button"
-class="footer"
-class="one-column"
-class="column"
-/* contacto */
-class="header"
-class="two-columns"
-class="column"
-class="header-logo"
-class="header-logo-icon"
-class="header-logo-title"
-class="column"
-class="header-menu"
-class="contact"
-class="one-column"
-class="column"
-class="page-title"
-class="two-columns"
-class="column"
-class="contact-options"
-class="column"
-class="contact-form"
-class="shopping-cart-summary"
-class="two-columns"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="two-columns"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="one-column"
-class="column"
-class="form-element"
-class="form-element-label"
-class="form-element-input"
-class="form-reset-button"
-class="form-button"
-class="custom-button"
-class="reset-button"
-class="custom-button"
-class="footer"
-class="one-column"
-class="column"
-/* producto */
-class="header"
-class="two-columns"
-class="column"
-class="header-logo"
-class="header-logo-icon"
-class="header-logo-title"
-class="column"
-class="header-menu"
-class="product"
-class="two-columns"
-class="column"
-class="product-image"
-class="slider-gallery-image-big"
-class="slider-gallery-miniatures"
-class="five-columns"
-class="column"
-class="slider-gallery-miniatures-item"
-class="column"
-class="slider-gallery-miniatures-item"
-class="column"
-class="slider-gallery-miniatures-item"
-class="column"
-class="slider-gallery-miniatures-item"
-class="column"
-class="slider-gallery-miniatures-item"
-class="column"
-class="product-title"
-class="product-price"
-class="product-description"
-class="product-quantity"
-class="product-quantity-text"
-class="product-quantity-selector"
-class="product-quantity-selector-minus"
-class="product-quantity-selector-value"
-class="product-quantity-selector-plus"
-class="product-add-to-cart-button"
-class="button"
-class="footer"
-class="one-column"
-class="column"
-/* productos */
-/*SOLO ME QUEDA PASAR PAGINA PRODUCTOS*/
+/* Columns */
 
+.five-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+}
 
+.five-columns > .column{
+    width: 18%;
+}  
 
+.four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.four-columns > .column{
+    width: 22%;
+}
 
+.three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.three-columns > .column{
+    width: 30%;
+}
 
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.two-columns > .column{
+    width: 48%;
+}
 
+.two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.two-columns-aside > .column-aside{
+    width: 20%;
+}
 
+.two-columns-aside > .column-main{
+    width: 75%;
+}
 
+.one-column{
+    width: 100%;
+}
 
+.one-column > .column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* Home */.
+.header{
+}
+.header-logo{}
+.header-logo-icon{}
+.header-logo-title{
 
-
-
-
-
-
-
+}
+.header-menu{}
+.home{}
+.slider{}
+.slider-image{}
+.slider-title{}
+.slider-button{}
+.button{}
+.featured-services{}
+.featured-services-title{}
+.featured-services-gallery{}
+.featured-services-gallery-item{}
+.featured-services-gallery-item-image{}
+.featured-services-gallery-item-call-to-action{}
+.featured-services-gallery-item-category{}
+.featured-services-gallery-item-description{}
+.banner-text{}
+.banner-text-description{}
+.banner-text-image{}
+.footer{}
+/* carritocompra */.
+.shopping-cart{}
+.page-title{}
+.shopping-cart-table{}
+.product-quantity-selector{}
+.product-quantity-selector-minus{}
+.product-quantity-selector-value{}
+.input-text-qty-text{}
+.product-quantity-selector-plus{}
+.shopping-cart-summary{}
+.shopping-cart-resume-buttons{}
+.shopping-cart-resume-button{}
+/* checkout */.
+.checkout{}
+.checkout-form{}
+.form-element{}
+.form-element-label{}
+.form-element-input{}
+.reset-button{}
+.checkout-summary{}
+.checkout-form-payment-methods{}
+.form-button{}
+/* contacto */.
+.contact{}
+.contact-options{}
+.contact-form{}
+.form-reset-button{}
+.custom-button{}
+/* producto */.
+.product{}
+.product-image{}
+.slider-gallery-image-big{}
+.slider-gallery-miniatures{}
+.slider-gallery-miniatures-item{}
+.product-title{}
+.product-price{}
+.product-description{}
+.product-quantity{}
+.product-quantity-text{}
+.product-add-to-cart-button{}
+/* productos */.
+.products{}
+.products-category{}
+.products-category-menu-title{}
+.products-category-menu-list{}
+.products-results{}
+.products-results-counter{}
+.products-results-drop-down{}
+.products-gallery{}
+.products-gallery-item{}
+.products-gallery-item-price{}
+.products-gallery-item-image{}
+.products-gallery-item-description{}
+.product-gallery-item-button{}
 
 
