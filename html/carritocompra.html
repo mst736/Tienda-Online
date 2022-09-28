@@ -23,108 +23,125 @@
             <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
                 <div class="two-columns"></div>
                     <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
-                        <div class="two-columns">
-                            <div class="column">
-                                <div class="header-icon">icono</div><!--ICONO EMPRESA-->
-                            </div>
-                            <div class="column">
-                                <div class="header-title">titulo</div><!--TÍTULO-->
-                            </div>
+                        <div class="header-logo">
+                            <div class="header-logo-icon"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M16 1.2C15 1.2 14.2 2 14.2 3S15 4.8 16 4.8 17.8 4 17.8 3 17 1.2 16 1.2M12.4 4.1C11.93 4.1 11.5 4.29 11.2 4.6L7.5 8.29C7.19 8.6 7 9 7 9.5C7 10.13 7.33 10.66 7.85 10.97L11.2 13V18H13V11.5L10.75 9.85L13.07 7.5L14.8 10H19V8.2H15.8L13.86 4.93C13.57 4.43 13 4.1 12.4 4.1M10 3H3C2.45 3 2 2.55 2 2S2.45 1 3 1H12.79C12.58 1.34 12.41 1.71 12.32 2.11C11.46 2.13 10.65 2.45 10 3M5 12C2.24 12 0 14.24 0 17S2.24 22 5 22 10 19.76 10 17 7.76 12 5 12M5 20.5C3.07 20.5 1.5 18.93 1.5 17S3.07 13.5 5 13.5 8.5 15.07 8.5 17 6.93 20.5 5 20.5M19 12C16.24 12 14 14.24 14 17S16.24 22 19 22 24 19.76 24 17 21.76 12 19 12M19 20.5C17.07 20.5 15.5 18.93 15.5 17S17.07 13.5 19 13.5 22.5 15.07 22.5 17 20.93 20.5 19 20.5M5.32 11H1C.448 11 0 10.55 0 10S.448 9 1 9H5.05C5.03 9.16 5 9.33 5 9.5C5 10.03 5.12 10.54 5.32 11M6 7H2C1.45 7 1 6.55 1 6S1.45 5 2 5H7.97L6.09 6.87C6.05 6.91 6 6.96 6 7Z" />
+                            </svg></div><!--ICONO EMPRESA-->
+                            <div class="header-logo-title">
+                                <span>MI TIENDA ONLINE</span>
+                            </div><!--TÍTULO-->
                         </div>
                     </div>
                     <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
-                        <ul>
-                        <li></li><!--INICIO-->
-                        <li></li><!--RESERVA-->
-                        <li></li><!--CONTACTO-->
-                        </ul>
+                        <div class="header-menu">
+                            <ul>
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5500/html/contacto.html">Home</a></li><!--INICIO-->
+                                    <li><a href="http://127.0.0.1:5500/html/contacto.html">Book Now</a></li><!--RESERVA-->
+                                    <li><a href="http://127.0.0.1:5500/html/contacto.html">Contact Us</a></li><!--CONTACTO-->
+                                </ul>
+                                </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-             
         </header>
 
         <main>
             <div class="shopping-cart"><!--DIV SHOPPING CART-->
                 <div class="one-column">
                     <div class="column">
-                        <div class="product-title"></div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
-                        <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
-                            <tr><!--CAMPOS CABECERA DE LA TABLA-->
-                                <th></th><!--NOMBRE CAMPO TABLA-->
-                                <th>Producto</th><!--NOMBRE CAMPO TABLA-->
-                                <th>Precio</th><!--NOMBRE CAMPO TABLA-->
-                                <th>Días</th><!--NOMBRE CAMPO TABLA-->
-                            </tr>
-                            <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
-                                <td><!--MINIATURA PRODUCTO SELECCIONADO--></td>
-                                <td><!--TÍTULO PRODUCTO SELECCIONADO--></td>
-                                <td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products--></td>
-                                <td><!--SELECTOR DE DÍAS-->
-                                    <div class="product-quantity-selector">
-                                        <div class="three-columns"><!--SELECTOR DE DÍAS-->
-                                            <div class="column">
-                                                <div class="product-quantity-selector-minus"></div><!--SELECTOR DÍAS (-)-->
-                                            </div>
-                                            <div class="column">
-                                                <div class="product-quantity-selector-value"></div><!--VALOR DÍAS-->
-                                            </div>
-                                            <div class="column">
-                                                <div class="product-quantity-selector-plus"></div><!--SELECTOR DÍAS (+)-->
-                                            </div>
+                        <div class="page-title">
+                            <h1>Carrito de la Compra</h1>
+                        </div><!--DIV TÍTULO CARRITO DE LA COMPRA, ME TRAJE DE PRODUCTO.HTML-->
+
+                        <div class="shopping-cart-table">
+                            <table> <!--TABLA CON INFORMACIÓN PRODUCTOS SELECCIONADOS EN CARRITO-->
+                                <tr><!--CAMPOS CABECERA DE LA TABLA-->
+                                    <th></th><!--NOMBRE CAMPO TABLA-->
+                                    <th>Producto</th><!--NOMBRE CAMPO TABLA-->
+                                    <th>Precio</th><!--NOMBRE CAMPO TABLA-->
+                                    <th>Días</th><!--NOMBRE CAMPO TABLA-->
+                                </tr>
+                                <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
+                                    <td>
+                                        <img src="/imagenes/carrito_compra/hombres_mountain_bike_campo.jpg" alt="hombres mountain bike campo" width="150" height="200">
+                                    </td><!--MINIATURA PRODUCTO SELECCIONADO, NO ME FUNCIONA-->
+                                    <td>Bicicleta mountain bike Kona</td><!--TÍTULO PRODUCTO SELECCIONADO-->
+                                    <td>15€/día</td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products-->
+                                    <td><!--SELECTOR DE DÍAS-->
+                                        <div class="product-quantity-selector">
+                        
+                                            <div class="product-quantity-selector-minus">
+                                                <button>-</button>
+                                            </div><!--SELECTOR DÍAS (-)-->
+                                            <div class="product-quantity-selector-value">
+                                                <input id="theinput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                            </div><!--VALOR DÍAS-->
+                                            <div class="product-quantity-selector-plus">
+                                                <button>+</button>
+                                            </div><!--SELECTOR DÍAS (+)-->
+                                            
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
                         <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA-->
                             <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
                                 <tr>
                                     <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
                                 </tr>
                                 <tr><!--FILA COMPRA SIN IVA-->
-
-                                <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
-                                <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
-                                
+                                    <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
+                                    <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->       
                                 </tr>
                                 <tr><!--FILA IMPORTE IVA-->
-
                                     <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
                                     <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
-                                
-                                </tr><tr><!--FILA COMPRA SIN IVA-->
-
+                                </tr>
+                                <tr><!--FILA COMPRA SIN IVA-->
                                     <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
                                     <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
-                                
-                                </tr><tr><!--FILA TOTAL COMPRA-->
-
+                                </tr>
+                                <tr><!--FILA TOTAL COMPRA-->
                                     <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
                                     <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
-                                
                                 </tr>
                             </table>
+                        </div>
+
                         
-                            <div class="shopping-cart-summary-return-and-shop-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
-                                <div class="two-columns">
-                                    <div class="column">
+                        <div class="shopping-cart-resume-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
+                            <div class="two-columns">
+                                <div class="column">
+                                    <div class="shopping-cart-resume-button">
                                         <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
                                     </div>
-                                    <div class="column">
+                                </div>
+                                <div class="column">
+                                    <div class="shopping-cart-resume-button">
                                         <button class="button">Comprar</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                       
                 </div>
             </div>
-            
         </main>
 
         <footer>
-            <div class="footer"><div class="one-column"><div class="column"><p>@2022</p><p>enlace a una web de verdad</p></div></div></div><!--FOOTER COPYRIGHT-->
+            <div class="footer">
+                <div class="one-column">
+                    <div class="column">
+                        <p>@2022</p>
+                        <p>enlace a una web de verdad</p>
+                    </div>
+                </div>
+            </div><!--FOOTER COPYRIGHT-->
         </footer>
           
     </body>
