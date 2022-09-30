@@ -411,86 +411,98 @@ footer{
     flex-direction: column;
     width: 100%;
 }
-/* Home */.
-.header{
-}
-.header-logo{}
-.header-logo-icon{}
-.header-logo-title{
 
+/* Home */
+
+.header{
+    background-color: hsl(202, 83%, 54%);
+    min-height: 10vh;
+    width: 100%;
 }
-.header-menu{}
+
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo-icon{}
+.header-logo-title{}
+.header-menu{
+    display: flex;
+    justify-content: end;
+}
+.header-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
 .home{}
 .slider{}
-.slider-image{}
-.slider-title{}
-.slider-button{}
+.slider > .image{}
+.slider > .title{}
+.slider > .button{}
 .button{}
 .featured-services{}
-.featured-services-title{}
-.featured-services-gallery{}
-.featured-services-gallery-item{}
-.featured-services-gallery-item-image{}
-.featured-services-gallery-item-call-to-action{}
-.featured-services-gallery-item-category{}
-.featured-services-gallery-item-description{}
-.banner-text{}
-.banner-text-description{}
-.banner-text-image{}
+.featured-services > .services > .title{}
+.featured-services > .gallery{}
+.featured-services > .gallery > .item{}
+.featured-services > .gallery > .item > .image{}
+.featured-services > .gallery > .item > .call-to-action{}
+.featured-services > .gallery > .item > .category{}
+.featured-services > .gallery > .item > .description{}
+.banner > .text{}
+.banner > .text > .description{}
+.banner > .text > .image{}
 .footer{}
 /* carritocompra */.
-.shopping-cart{}
+.shopping -cart{}
 .page-title{}
-.shopping-cart-table{}
-.product-quantity-selector{}
-.product-quantity-selector-minus{}
-.product-quantity-selector-value{}
-.input-text-qty-text{}
-.product-quantity-selector-plus{}
-.shopping-cart-summary{}
-.shopping-cart-resume-buttons{}
-.shopping-cart-resume-button{}
+.shopping > .cart > .table{}
+.product > .quantity > .selector{}
+.product > .quantity > .selector > .minus{}
+.product > .quantity > .selector > .value{}
+.input > .text qty text{}
+.product > .quantity > .selector > .plus{}
+.shopping -cart > .summary{}
+.shopping -cart > .resume > .buttons{}
+.shopping -cart > .resume > .button{}
 /* checkout */.
 .checkout{}
-.checkout-form{}
-.form-element{}
-.form-element-label{}
-.form-element-input{}
-.reset-button{}
-.checkout-summary{}
-.checkout-form-payment-methods{}
+.checkout > .form{}
+.form > .element{}
+.form > .element > .label{}
+.form > .element > .input{}
+.reset > .button{}
+.checkout > .summary{}
+.checkout > .form > .payment-methods{}
 .form-button{}
 /* contacto */.
 .contact{}
-.contact-options{}
-.contact-form{}
+.contact > .options{}
+.contact > .form{}
 .form-reset-button{}
 .custom-button{}
 /* producto */.
 .product{}
-.product-image{}
-.slider-gallery-image-big{}
-.slider-gallery-miniatures{}
-.slider-gallery-miniatures-item{}
-.product-title{}
-.product-price{}
-.product-description{}
-.product-quantity{}
-.product-quantity-text{}
-.product-add-to-cart-button{}
+.product > .image{}
+.slider-gallery > .image > .big{}
+.slider-gallery > .miniatures{}
+.slider-gallery > .miniatures > .item{}
+.product > .title{}
+.product > .price{}
+.product > .description{}
+.product > .quantity{}
+.product > .quantity > .text{}
+.product > .add-to-cart-button{}
 /* productos */.
 .products{}
-.products-category{}
-.products-category-menu-title{}
-.products-category-menu-list{}
-.products-results{}
-.products-results-counter{}
-.products-results-drop-down{}
-.products-gallery{}
-.products-gallery-item{}
-.products-gallery-item-price{}
-.products-gallery-item-image{}
-.products-gallery-item-description{}
-.product-gallery-item-button{}
-
-
+.products > .category{}
+.products > .category > .menu > .title{}
+.products > .category > .menu > .list{}
+.products > .results{}
+.products > .results > .counter{}
+.products > .results > .drop-down{}
+.products > .gallery{}
+.products > .gallery > .item{}
+.products > .gallery > .item > .price{}
+.products > .gallery > .item > .image{}
+.products > .gallery > .item > .description{}
+.product > .gallery > .item > .button{}
