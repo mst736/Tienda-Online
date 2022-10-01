@@ -215,19 +215,19 @@ video{
 /* Typography */
 
 h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
 }
 
 h1, h2, h3, h4 {
-    font-family: '';
+    font-family: "calibri";
 }
 
 h5, h6 {
-    font-family:'';
+    font-family: "calibri";
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li{
-    font-family: '';
+    font-family: "calibri";
 }
 
 h1 {
@@ -415,31 +415,76 @@ footer{
 /* Home */
 
 .header{
-    background-color: hsl(202, 83%, 54%);
-    min-height: 10vh;
+    align-items: center;
+    background-color: hsl(158deg 79% 53%);
+    box-shadow: 10px -5px 48px 3px black;
+    border: 5px solid;
+    color: black;
+    display: flex;
+    margin-bottom: 1.6vh;
+    min-height: 8vh;
+    padding: 10px;
     width: 100%;
 }
 
 .header-logo{
     display: flex;
-    justify-content: space-between;
+    margin-left: 5%;
+    justify-content: start;
 }
-.header-logo-icon{}
-.header-logo-title{}
+.header-logo-icon{
+}
+.header-logo-icon svg{
+    height: 2rem;
+    width: 2rem;
+}
+.header-logo-icon path{
+    fill: hsla(7, 94%, 54%, 0.658);
+}
+.header-logo-title{
+    margin-left: 5%;
+    vertical-align: middle;
+}
+.header-logo-title span{
+   font-size: x-large;
+}
 .header-menu{
     display: flex;
     justify-content: end;
+    margin-right: 5%;
 }
 .header-menu ul{
     display: flex;
     justify-content: space-between;
+    width: 55%;
 }
 .home{}
-.slider{}
-.slider > .image{}
-.slider > .title{}
-.slider > .button{}
-.button{}
+.slider{
+    display: flex;
+    min-height: 40vh;
+    position:relative;
+}
+.slider-image{
+    width:100%
+}
+.slider-title{
+    background-color: rgb(224 182 66 / 37%);
+    margin-top: 7vh;
+    margin-left: 3rem;
+    position: absolute;
+    width: 56%;
+}
+.slider-button{
+    margin-top: 23vh;
+    margin-left: 3rem;
+    position: absolute;
+    width: 8%;
+}
+.button {
+    background-image: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+    border: 0.3rem solid hsl(0, 0%, 0%);
+    border-radius: 15%;
+}
 .featured-services{}
 .featured-services > .services > .title{}
 .featured-services > .gallery{}
@@ -452,18 +497,18 @@ footer{
 .banner > .text > .description{}
 .banner > .text > .image{}
 .footer{}
-/* carritocompra */.
-.shopping -cart{}
+/* carritocompra */
+.shopping-cart{}
 .page-title{}
 .shopping > .cart > .table{}
 .product > .quantity > .selector{}
 .product > .quantity > .selector > .minus{}
 .product > .quantity > .selector > .value{}
-.input > .text qty text{}
+.input > .text-qty-text{}
 .product > .quantity > .selector > .plus{}
-.shopping -cart > .summary{}
-.shopping -cart > .resume > .buttons{}
-.shopping -cart > .resume > .button{}
+.shopping-cart > .summary{}
+.shopping-cart > .resume > .buttons{}
+.shopping-cart > .resume > .button{}
 /* checkout */.
 .checkout{}
 .checkout > .form{}
