@@ -480,9 +480,9 @@ footer{
 }
 
 .slider-button{
-    top: 20.5vh;    
     left: 3rem;
     position: absolute;
+    top: 24.5vh;    
     width: 8%;
 }
 
@@ -516,8 +516,9 @@ footer{
     border-radius: 2%;
     display: flex;
     flex-direction: column;
-    height: 70vh;    
     justify-content: space-between;
+    height: 70vh;    
+
 }
 
 .featured-services-gallery-item-image{
@@ -540,21 +541,21 @@ footer{
     font-style: italic;
 }
 .banner-text{
-    padding: 0 5%;
     height: 40vh;
+    margin: 2rem 0 0rem 0;
+    padding: 0 5%;
     width: 90%;
-    margin: 2rem 0;
+
 }
 .banner-text-description{
-    height: 30vh;
-}
+    height: 36vh;}
 .banner-text-description p{
     font-size: large;
     font-weight: 800;
+    object-fit: cover;
 }
 .banner-text-image{
-    height: 30vh;
-}
+    height: 36vh;}
 .footer{
     align-items: center;
     background-color: hsl(198deg 53% 53%);
@@ -565,9 +566,10 @@ footer{
 }
 
 .one-column > .column p{
-    width: 20%;
-    text-align: center;
     font-weight: 700;
+    text-align: center;
+    width: 20%;
+
 }
 
 /* carritocompra */
