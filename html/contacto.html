@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!--esta linea hace que la pagina se pueda visualizar en cualquier pantalla (responsive)-->
         <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico"> <!--favinicon es una imagenn enlazada que se mostrará en la pestaña de navegación-->
 
-        <title>Contacte con Nosotros</title>
+        <title>Contact Us</title>
         <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords"    content="palabras clave, separadas, por comas">
 
@@ -58,7 +58,7 @@
                 <div class="one-column"><!--COLUMNA CATEGORIAS Y COLUMNA RESULTADOS products -->
                     <div class="column">
                         <div class="page-title">
-                            <h1>Contacte con Nosotros</h1>
+                            <h1>Contact Us</h1>
                         </div><!--DIV TÍTULO FINALIZAR COMPRA, ME TRAJE DE PRODUCTO.HTML-->
                     </div>
                 </div>
@@ -112,64 +112,73 @@
                     <div class="column">
                         <form action="action_page.php">
                             <div class="contact-form">
-                                <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
-                                    <div class="two-columns">
-                                        <div class="form-element">
-                                            <div class="form-element-label">
-                                                <label for="fname">First Name</label>
+                                    <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
+                                        <div class="two-columns">
+                                            <div class="column">
+                                                <div class="form-element">
+                                                    <div class="form-element-label">
+                                                            <label for="fname">First Name</label>
+                                                    </div>
+                                                    <div class="form-element-input">
+                                                        <input type="text" id="fname" name="firstname" placeholder="What's your Name?">
+                                                    </div>
+                                                </div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
                                             </div>
-                                            <div class="form-element-input">
-                                                <input type="text" id="fname" name="firstname" placeholder="What's your Name?">
-                                            </div>
-                                        </div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
-                                        <div class="form-element">
-                                            <div class="form-element-label">
-                                                <label for="lname">Last Name</label>
-                                            </div>
-                                            <div class="form-element-input">
-                                                <input type="text" id="lname" name="lastname" placeholder="What's your Last Name?">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="two-columns">
-                                        <div class="form-element">
-                                            <div class="form-element-label">
-                                                <label for="telephone">Telephone</label>
-                                            </div>
-                                            <div class="form-element-input">
-                                                <input type="tel" id="telephone" name="telephone" placeholder="What's your Phone Number?">
-                                            </div>
-                                        </div>
-                                        <div class="form-element">
-                                            <div class="form-element-label">
-                                                <label for="email">Email</label>
-                                            </div>
-                                            <div class="form-element-input">
-                                                <input type="email" id="email" name="email" placeholder="What's your Email Adress?">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one-column">
-                                        <div class="column">
-                                            <div class="form-element">
-                                                <div class="form-element-label">
-                                                    <label for="fname">Message</label>
-                                                </div>
-                                                <div class="form-element-input">
-                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <div class="column">                                        
+                                                <div class="form-element">
+                                                    <div class="form-element-label">
+                                                        <label for="lname">Last Name</label>
+                                                    </div>
+                                                    <div class="form-element-input">
+                                                        <input type="text" id="lname" name="lastname" placeholder="What's your Last Name?">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-reset-button">
-                                        <div class="form-button">
-                                            <button class="custom-button">Form Summit</button><!--BOTÓN ENVIAR FORMULARIO DE CONTACTO-->
+                                        <div class="two-columns">
+                                            <div class="column">
+                                                <div class="form-element">
+                                                    <div class="form-element-label">
+                                                        <label for="telephone">Telephone</label>
+                                                    </div>
+                                                    <div class="form-element-input">
+                                                        <input type="tel" id="telephone" name="telephone" placeholder="What's your Phone Number?">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column">
+                                                <div class="form-element">
+                                                    <div class="form-element-label">
+                                                        <label for="email">Email</label>
+                                                    </div>
+                                                    <div class="form-element-input">
+                                                        <input type="email" id="email" name="email" placeholder="What's your Email Adress?">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="reset-button">
-                                            <button class="custom-button">Reset Form</button><!--BOTÓN RESTABLECER DATOS FORMULARIO DE CONTACTO-->
+                                        <div class="one-column">
+                                            <div class="column">
+                                                <div class="form-element">
+                                                    <div class="form-element-label">
+                                                        <label for="fname">Message</label>
+                                                    </div>
+                                                    <div class="form-element-input">
+                                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="form-reset-button">
+                                            <div class="form-button">
+                                                <button class="custom-button">Form Summit</button><!--BOTÓN ENVIAR FORMULARIO DE CONTACTO-->
+                                            </div>
+                                            <div class="reset-button">
+                                                <button class="custom-button">Reset Form</button><!--BOTÓN RESTABLECER DATOS FORMULARIO DE CONTACTO-->
+                                            </div>
+                                        </div>
+                        
                                     </div>
-                       
                                 </div>
                             </div>
                         </form>
