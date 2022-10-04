@@ -537,25 +537,31 @@ footer{
 .featured-services-gallery-item-description{
     margin-top: -1rem;
 }
-ç.featured-services-gallery-item-description p{
-    font-style: italic;
-}
+.featured-services-gallery-item-description p{
+    font-size: large;
+    font-style: normal;
+}   
 .banner-text{
     height: 40vh;
     margin: 2rem 0 0rem 0;
     padding: 0 5%;
     width: 90%;
-
 }
+
 .banner-text-description{
-    height: 36vh;}
+    height: 36vh;
+}
+
 .banner-text-description p{
     font-size: large;
     font-weight: 800;
     object-fit: cover;
 }
+
 .banner-text-image{
-    height: 36vh;}
+    height: 36vh;
+}
+
 .footer{
     align-items: center;
     background-color: hsl(198deg 53% 53%);
@@ -565,7 +571,8 @@ footer{
     justify-content: center;
 }
 
-.one-column > .column p{
+.footer p{
+    font-size: large;
     font-weight: 700;
     text-align: center;
     width: 20%;
@@ -574,17 +581,62 @@ footer{
 
 /* carritocompra */
 
-.shopping-cart{}
-.page-title{}
-.shopping > .cart > .table{}
-.product > .quantity > .selector{}
-.product > .quantity > .selector > .minus{}
-.product > .quantity > .selector > .value{}
-.input > .text-qty-text{}
-.product > .quantity > .selector > .plus{}
-.shopping-cart > .summary{}
-.shopping-cart > .resume > .buttons{}
-.shopping-cart > .resume > .button{}
+.shopping-cart{
+    display: flex;
+    flex-direction:row;
+}
+.page-title{
+    text-align: center;
+}
+.shopping-cart-table{
+    background-color: rgb(62, 238, 18);
+    border-top: solid;
+    margin-top: 1.5rem;
+    padding: 0 5%;
+    width: 90%;
+}
+.shopping-cart-table table{
+    background-color: aqua;
+    width: 100%;
+}
+.shopping-cart-table tr td{
+    background-color: coral;
+    font-weight: 700;
+    text-align: right;
+
+}
+.product-quantity-selector{
+    border-style: solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.product-quantity-selector-minus{
+    width: 45%;
+}
+.product-quantity-selector button{
+    width: 100%;
+} /* PREGUNTAR A CARLOS PORQUE EL OBJECT FIT NO AMPLIA EL BOTÓN PARA LLENAR CLASE ".product-quantity-selector-minus" */
+.product-quantity-selector-value{
+    width: 60%;}
+.product-quantity-selector-value input{
+    width: 100%;
+}
+.product-quantity-selector-plus{
+    width: 45%;
+}
+.shopping-cart-summary{
+    background-color:crimson;
+    display: flex;
+    justify-content: end;
+
+} 
+.shopping-cart-resume-buttons{
+    background-color: hsl(291deg 86% 50%);
+}
+
+.shopping-cart-resume-button{}
 /* checkout */.
 .checkout{}
 .checkout > .form{}
