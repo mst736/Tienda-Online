@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    background-color: hsla(64, 84%, 45%, 0.568);
 }
 
 main {
@@ -229,11 +230,12 @@ h5, h6 {
 
 a, td, th, p, button, span, label, select, input, textarea, li{
     font-family: "calibri";
+    font-size: 2rem;
     font-weight: 700;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;    
     font-weight: 600;
     text-decoration: none;
 }
@@ -243,7 +245,11 @@ h2 {
     font-weight: 600;
     text-decoration: none;
 }
-
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
 h4 {
     font-weight: 600;
     text-decoration: none;
@@ -376,8 +382,8 @@ footer{
 .header-logo-icon{
 }
 .header-logo-icon svg{
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 .header-logo-icon path{
     fill: hsla(7, 94%, 54%, 0.658);
@@ -387,7 +393,7 @@ footer{
     vertical-align: middle;
 }
 .header-logo-title span{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .header-menu{
     display: flex;
@@ -396,6 +402,7 @@ footer{
 }
 .header-menu ul{
     display: flex;
+    font-size: 2.5rem;
     justify-content: space-between;
     width: 55%;
 }
@@ -446,6 +453,7 @@ footer{
     text-align: center;
 }
 
+
 .featured-services-gallery{
     display: flex;
     width:100%;
@@ -455,15 +463,12 @@ footer{
     background-color: hsla(34, 91%, 50%, 0.651);
     border-style: solid;
     border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70vh;    
-
+    display: grid;
+    height: 75vh;
 }
 
 .featured-services-gallery-item-image{
-  
+    margin: 0rem 0rem 0.75rem 0rem;
 }
 
 .featured-services-gallery-item-call-to-action{
@@ -472,7 +477,12 @@ footer{
 .featured-services-gallery-item-category{    
     margin-top: -1rem;
 }
-.featured-services-gallery-item-category h4{    
+.featured-services-gallery-item-call-to-action h3{  
+    font-size: 1.8rem;  
+}
+
+.featured-services-gallery-item-category h4{  
+    font-size: 1.75rem;  
     color: hsla(224, 84%, 49%, 0.856);
 }
 .featured-services-gallery-item-description{
@@ -490,22 +500,28 @@ footer{
 }
 
 .banner-text-description{
+    display: flex;
     height: 36vh;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .banner-text-description p{
-    font-size: large;
+    font-size: 1.75rem;    
     font-weight: 800;
     object-fit: cover;
 }
 
 .banner-text-image{
+    display: flex;
     height: 36vh;
+    justify-content: center;
 }
 
 .banner-text-image img{
-    height: 36vh;
     border-style: solid;
+    height: 36vh;
+    width:50%
 }
 
 .footer{
@@ -518,7 +534,7 @@ footer{
 }
 
 .footer p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     width: 20%;
@@ -532,6 +548,7 @@ footer{
     flex-direction:row;
 }
 .page-title{
+    margin: 0rem 0rem 1rem 0rem;
     text-align: center;
 }
 .shopping-cart-table{
@@ -549,26 +566,43 @@ footer{
 
 }
 .product-quantity-selector{
-    border-style: solid;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 20%;
 }
 .product-quantity-selector-minus{
     width: 45%;
 }
-.product-quantity-selector button{
+.product-quantity-selector-minus button{
+    background-image: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+    border-bottom-left-radius: 10%;
+    border-style:solid;
+    border-top-left-radius: 10%;
+    border-width: 0.4rem;
     width: 100%;
-} /* PREGUNTAR A CARLOS PORQUE EL OBJECT FIT NO AMPLIA EL BOTÓN PARA LLENAR CLASE ".product-quantity-selector-minus" */
+
+}
 .product-quantity-selector-value{
-    width: 60%;
+    width: 20%;
 }
 .product-quantity-selector-value input{
+    border-right: none;
+    border-left: none;
+    border-color: black;
+    border-style:solid;
+    border-width: 0.4rem;
     width: 100%;
 }
 .product-quantity-selector-plus{
     width: 45%;
+}
+.product-quantity-selector-plus button{
+    background-image: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+    border-bottom-right-radius: 10%;
+    border-style:solid;
+    border-top-right-radius: 10%;
+    border-width: 0.4rem;
+    width: 100%;
 }
 .shopping-cart-summary{
     display: grid;
@@ -592,27 +626,42 @@ footer{
 }
 .form-element-label{
     margin: 0rem 0 0.5rem 0rem;
+    
 }
-
+.form-element-label label{
+    font-size: 1.75rem;
+}
 .form-element-input{}
 
 .form-element-input input{
+    font-size: 1.75rem;
     width: 100%;
 }
 
 .reset-button{
+    display: flex;
+    font-size: 1.5rem;
+    height: 4vh;
     width: 35%;
 }
 
 .checkout-summary{}
 
 .checkout-form-payment-methods{}
+
 .form-button{
+    display: flex;
+    font-size: 1.5rem;
+    height: 4vh;
     width: 35%;
 }
 
 /* contacto */
-.contact{}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 77vh;}
 
 .contact-options{
     align-items: center;
@@ -622,6 +671,7 @@ footer{
 }
 .contact-options ul{
     align-items: center;
+    font-size: 1.75rem;
     min-height: 40vh;
     display: grid;
 }
@@ -643,29 +693,140 @@ footer{
     border-radius: 15%;
     width: 100%;
 }
-/* producto */
-.product{}
-.product-image{}
-.slider-gallery-image-big{}
-.slider-gallery-miniatures{}
-.slider-gallery-miniatures-item{}
-.product-title{}
-.product-price{}
-.product-description{}
-.product-quantity{}
-.product-quantity-text{}
-.product-add-to-cart-button{}
+/* product */
+.product{
+    min-height: 77vh;
+}
+.product-image{
+    height: 100%;
+    width: 100%;
+}   
+.slider-gallery-image-big{
+    padding: 0% 5%;
+    height: 60%;
+}
+.slider-gallery-miniatures{
+    height: 40%;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0% 10%;
+}
+.slider-gallery-miniatures-item{
+    border-style: solid;
+    border-width: 0.5rem;
+}
+.product-result{
+    width: 100%;
+}
+.product-title{
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.product-price{
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.product-description{
+    margin: 0rem 0rem 6rem 0rem;
+}
+
+.product-quantity{  
+    margin: 0rem 0rem 6rem 0rem;    
+    display: flex;
+}
+.product-quantity-text{
+margin: 0rem 4rem 0rem 0rem;
+}
+
+.product-add-to-cart-button{
+    width:40%;
+
+}
 /* productos */
-.products{}
-.products-category{}
-.products-category-menu-title{}
+.products{
+    min-height: 77vh;
+}
+.products-category{
+    border-right: solid;
+    height: 100%;
+    text-align: center;
+}
+.products-category-menu-title{
+    margin-bottom: 1rem;
+}
 .products-category-menu-list{}
-.products-results{}
+
+.products-category-menu-list ul li{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.products-results{
+    margin-bottom: 2rem;
+}
+
 .products-results-counter{}
-.products-results-drop-down{}
-.products-gallery{}
-.products-gallery-item{}
-.products-gallery-item-price{}
-.products-gallery-item-image{}
-.products-gallery-item-description{}
-.product-gallery-item-button{}
+
+.products-results-drop-down{
+    display: flex;
+    justify-content: end;
+}
+.products-gallery{
+    display:flex;
+}
+.products-gallery-item{
+    border: 0.5rem;
+    border-radius: 5%;
+    border-style: solid;
+    position: relative;
+    height: 60%;
+    width: 45%;
+}
+.products-gallery-item-price{
+    background-color: hsl(251deg 2% 10% / 22%);
+    color: hsl(0deg 0% 100% / 48%);
+    font-size: 1rem;
+    position: absolute;
+    right: 4;
+    top: 1rem;
+}
+.products-gallery-item-price span{
+    font-size: 2rem;
+}
+
+.products-gallery-item-image{
+    height: 60%;
+}
+.products-gallery-item h2{
+    font-size: 1.5rem;
+}
+.products-gallery-item-description{
+    align-items: center;
+    border-bottom: solid;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+
+}
+
+.products-gallery-item-description{
+    align-items: center;
+    border-bottom: solid;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+}
+
+
+
+.product-gallery-item-button button{
+    background-image: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+.product-gallery-item-button button a{
+    width: 100%;
+}
