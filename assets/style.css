@@ -3,6 +3,7 @@
 /* Layout */
 html {
     line-height: 1.15; /* 1 */
+    letter-spacing: 0.25;
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -612,9 +613,13 @@ footer{
 
 .shopping-cart-resume-button{}
 /* checkout */
-.checkout{}
+.checkout{
+    min-height: 77vh;
+}
 
-.checkout-form{}
+.checkout-form{
+    margin: 0rem 5rem 0 5rem;
+}
 
 .form-element{
     margin: 0rem 0rem 1.5rem 0rem;
@@ -634,26 +639,62 @@ footer{
 .form-element-input{}
 
 .form-element-input input{
+    border-style: solid;
+    border-width: 0.2rem;
     font-size: 1.75rem;
     width: 100%;
 }
 
 .reset-button{
-    display: flex;
-    font-size: 1.5rem;
-    height: 4vh;
     width: 35%;
 }
+.reset-button input{
+    background-image: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+    border: 0.3rem solid hsl(0, 0%, 0%);
+    border-radius: 15%;
+    font-size: 1.5rem;
+    height: 4vh;
+    width: 100%;
+}
+.checkout-summary{
+    margin: 0rem 5rem 1rem 0rem;}
 
-.checkout-summary{}
+.checkout-summary table{
+    border-color: black;
+    border-style: solid;
+    width: 100%;
 
-.checkout-form-payment-methods{}
+}
+
+.checkout-summary table th{
+    background-color: hsl(0, 50%, 96%);
+    width: 100%;
+}
+
+.checkout-summary table tr{
+    display: flex;
+    justify-content: space-around;}
+
+.checkout-summary td{
+text-align: center;
+}
+
+
+
+
+.checkout-form-payment-methods{
+    margin: 0rem 0rem 1rem 0rem;
+
+}
 
 .form-button{
     display: flex;
     font-size: 1.5rem;
     height: 4vh;
     width: 35%;
+}
+.form-button a button{
+    width: 100%;
 }
 
 /* contacto */
@@ -811,10 +852,12 @@ margin: 0rem 4rem 0rem 0rem;
 .products-gallery-item-description{
     align-items: center;
     border-bottom: solid;
+
     display: flex;
     height: 20%;
     justify-content: center;
 }
+
 
 
 
