@@ -69,8 +69,30 @@
                                     <th>Días</th><!--NOMBRE CAMPO TABLA-->
                                 </tr>
                                 <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
+                                    <td class="td-border-top">
+                                        <img src="/imagenes/carrito_compra/hombres_mountain_bike_campo.jpg" alt="hombres mountain bike campo">
+                                    </td><!--MINIATURA PRODUCTO SELECCIONADO, NO ME FUNCIONA-->
+                                    <td class="td-border-top">Bicicleta mountain bike Kona</td><!--TÍTULO PRODUCTO SELECCIONADO-->
+                                    <td class="td-border-top">15€/día</td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products-->
+                                    <td class="td-border-top"><!--SELECTOR DE DÍAS-->
+                                        <div class="product-quantity-selector">
+                        
+                                            <div class="product-quantity-selector-minus">
+                                                <button>-</button>
+                                            </div><!--SELECTOR DÍAS (-)-->
+                                            <div class="product-quantity-selector-value">
+                                                <input id="theinput" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                            </div><!--VALOR DÍAS-->
+                                            <div class="product-quantity-selector-plus">
+                                                <button>+</button>
+                                            </div><!--SELECTOR DÍAS (+)-->
+                                            
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr><!--REGISTRO TABLA, SE MOSTRARÁN TANTOS COMO products HAYAMOS SELECCIONADO EN RESERVA-->
                                     <td>
-                                        <img src="/imagenes/carrito_compra/hombres_mountain_bike_campo.jpg" alt="hombres mountain bike campo" width="150" height="200">
+                                        <img src="/imagenes/carrito_compra/hombres_mountain_bike_campo.jpg" alt="hombres mountain bike campo">
                                     </td><!--MINIATURA PRODUCTO SELECCIONADO, NO ME FUNCIONA-->
                                     <td>Bicicleta mountain bike Kona</td><!--TÍTULO PRODUCTO SELECCIONADO-->
                                     <td>15€/día</td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products-->
@@ -90,45 +112,44 @@
                                         </div>
                                     </td>
                                 </tr>
+
                             </table>
                         </div>
-
-                        <div class="shopping-cart-summary"><!--RESUMEN DE LA COMPRA-->
-                            <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
-                                <tr>
-                                    <th>Resumen de la Compra</th><!--TÍTULO RESUMEN DE LA COMPRA-->
-                                </tr>
-                                <tr><!--FILA COMPRA SIN IVA-->
-                                    <td>Importe Sin IVA</td><!--TÍTULO COMPRA SIN IVA-->
-                                    <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->       
-                                </tr>
-                                <tr><!--FILA IMPORTE IVA-->
-                                    <td>Importe IVA</td><!--TÍTULO IMPORTE IVA-->
-                                    <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
-                                </tr>
-                                <tr><!--FILA COMPRA SIN IVA-->
-                                    <td>Importe Transporte</td><!--TÍTULO IMPORTE TRANSPORTE-->
-                                    <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
-                                </tr>
-                                <tr><!--FILA TOTAL COMPRA-->
-                                    <td>Total Compra</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
-                                    <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
-                                </tr>
-                            </table>
+                        <div class="shopping-cart-checkout-summary">
+                            <div class="checkout-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
+                                <div class="summary-title">
+                                    <h3>Checkout Summary</h3>
+                                </div>
+                                <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
+                                    <tbody><tr><!--FILA COMPRA SIN IVA-->
+                                        <td> VAT Free Amount</td><!--TÍTULO COMPRA SIN IVA-->
+                                        <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
+                                    </tr>
+                                    <tr><!--FILA IMPORTE IVA-->
+                                        <td>VAT</td><!--TÍTULO IMPORTE IVA-->
+                                        <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
+                                    </tr>
+                                    <tr><!--FILA COMPRA SIN IVA-->
+                                        <td>Transport</td><!--TÍTULO IMPORTE TRANSPORTE-->
+                                        <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
+                                    </tr>
+                                    <tr><!--FILA TOTAL COMPRA-->
+                                        <td>Total</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
+                                        <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
+                                    </tr>
+                                </tbody></table>
+                            </div>
                         </div>
-
-                        
                         <div class="shopping-cart-resume-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
-                            <div class="two-columns">
+                            <div class="one-column">
                                 <div class="column">
                                     <div class="shopping-cart-resume-button">
                                         <button class="button">Volver</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
                                     </div>
-                                </div>
-                                <div class="column">
                                     <div class="shopping-cart-resume-button">
                                         <button class="button">Comprar</button><!--CLASE REUTILIZADA DEL add-to-cart-button DE PÁGINA PRODUCTO-->
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
