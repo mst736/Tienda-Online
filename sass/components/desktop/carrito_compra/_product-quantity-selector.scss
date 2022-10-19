@@ -1,0 +1,75 @@
+//SELECTOR DE CANTIDAD
+
+.product-quantity-selector{
+
+    display: flex;
+    width: 20%;
+
+    //BOTÓN MINUS CANTIDAD SELECTOR 
+
+    .product-quantity-selector-minus{
+
+        width: 40%;
+
+        .product-quantity-selector-minus button{
+
+            background-image: $product-quantity-selector-button-background-image-gradient;
+            border-bottom-left-radius: 10%;
+            border-style:solid;
+            border-top-left-radius: 10%;
+            border-width: 0.4rem;
+            cursor: pointer;
+            width: 100%;
+    
+        }    
+
+    }
+
+
+
+    //CAMPO VALOR DE CANTIDAD SELECTOR 
+
+    .product-quantity-selector-value{
+
+        width: 20%;
+
+        .product-quantity-selector-value input{
+
+            border-right: none;
+            border-left: none;
+            border-color: $product-quantity-selector-value-input-color;
+            border-style:solid;
+            border-width: 0.4rem;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+
+    }
+
+
+    //BOTÓN PLUS CANTIDAD SELECTOR 
+
+    .product-quantity-selector-plus{
+
+        width: 40%;
+
+        .product-quantity-selector-plus button{
+
+            background-image: $product-quantity-selector-button-background-image-gradient;
+            border-bottom-right-radius: 10%;
+            border-style:solid;
+            border-top-right-radius: 10%;
+            border-width: 0.4rem;
+            cursor: pointer;
+            width: 100%;
+    
+        }
+    
+
+    }
+
+
+}
+

@@ -1,0 +1,18 @@
+// SECCIÓN DONDE MOSTRAMOS EL LISTADO UL CON LAS DISTINTAS CATEGORIAS DE NUESTRO PRODUCTO
+
+.products-category{
+
+    border-right: solid;
+    height: 100%;
+
+    .products-category-menu-title{
+        margin-bottom: 1rem;
+    }
+    
+    .products-category-menu-list ul li{
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    
+}
+

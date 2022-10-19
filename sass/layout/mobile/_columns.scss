@@ -1,0 +1,49 @@
+.mobile-five-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 18%;
+    }
+}
+
+.mobile-four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 22%;
+    }
+}
+
+.mobile-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 30%;
+    }
+}
+
+.mobile-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 48%;
+    }
+}
+
+.mobile-one-column{
+    width: 100%;
+    display: block;
+
+    & > .column{
+        width: 100%;
+    }
+}
+

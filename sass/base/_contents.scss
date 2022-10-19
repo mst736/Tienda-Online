@@ -1,0 +1,29 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+video{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.fixed-height{
+    height: 100%;
+}
+
+.fixed-height div:last-child{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+div:has(.fixed-height){
+    padding-bottom: 2rem;
+}

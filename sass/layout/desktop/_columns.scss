@@ -1,0 +1,64 @@
+.five-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 18%;
+    }    
+}
+
+.four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 22%;
+    }
+}
+
+.three-columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 30%;
+    }
+}
+
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column{
+        width: 48%;
+    }
+}
+
+.two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column-aside{
+        width: 20%;
+    }
+
+    & > .column-main{
+        width: 75%;
+    }
+}
+
+.one-column{
+    width: 100%;
+
+    & > .column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

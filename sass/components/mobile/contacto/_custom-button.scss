@@ -1,0 +1,11 @@
+// PROPIEDADES CSS PARA EL BOTÓN DE ENVÍO ESTANDARD PRESENTE EN VARIAS PÁGINAS DE LA WEB
+
+.custom-button{
+
+    background-image: $custom-button-background-image-gradient;
+    border: 0.3rem solid $custom-button-background-border-color;
+    border-radius: 15%;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+//z-index
+$z-index-featured-image: 1000;
+$z-index-slider-image: 1000;
+$z-index-featured-elements: 1001;
+$z-index-slider-elements: 1001;
+$z-index-header: 5000;
+$z-index-header-menu: 5000;
+$z-index-overlay: 5001;
+$z-index-spinner: 5002;
+
+//typography
+$font-stack: "Ubuntu", sans-serif;
+$font-stack-condensed: "Ubuntu Condensed", sans-serif;
+
+//colors
+$primary-color: hsl(226, 63%, 45%);
+$primary-color-light: hsl(226, 71%, 63%);
+$secondary-color: hsl(183, 98%, 35%);
+$secondary-color-dark: hsl(183, 98%, 15%);
+$header-text-color:  hsl(0, 0%, 0%);
+$header-box-shadow-color:  hsl(0, 0%, 0%);
+$header-menu-ul_li-color:  hsl(0, 0%, 100%);
+$slider-title-background-color: hsla(44, 89%, 40%, 0.37);
+$featured-services-gallery-item-background-color: hsla(34, 91%, 50%, 0.65);
+$featured-services-gallery-item-border-color: hsl(0, 0%, 0%);
+$featured-services-gallery-item-box-shadow-color: hsl(0, 0%, 0%);
+$featured-services-gallery-item-category-h4-color: hsla(224, 84%, 49%, 0.856);
+$reset-button-input-background-image-gradient: linear-gradient(to right, hsla(223, 47%, 36%, 0), hsl(199, 100%, 50%));
+$reset-button-input-background-border-color: hsl(0, 0%, 0%);
+$checkout-summary-border-color: hsl(0, 0%, 0%);
+$checkout-summary-background-color: hsl(0, 50%, 96%);
+$contact-options-ul-path-fill: hsla(7, 94%, 54%, 0.993);
+$custom-button-background-image-gradient: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+$custom-button-background-border-color: hsl(0, 0%, 0%);
+$products-gallery-item-price-background-color: hsl(251deg 2% 10%);
+$products-gallery-item-price-color: hsl(0deg 0% 100% / 48%);
+$products-gallery-item-button_button-background-image-gradient: hsl(0deg 0% 100% / 48%);
+$product-quantity-selector-button-background-image-gradient: linear-gradient(to right, hsla(223, 47%, 36%, 0), rgb(0, 174, 255));
+$product-quantity-selector-value-input-color: hsl(0, 0%, 0%);
+
+
+
+
+//style
+$text-border: 2px 0 0 hsl(0, 0%, 100%), -2px 0 0 hsl(0, 0%, 100%), 0 2px 0 hsl(0, 0%, 100%), 0 -2px 0 hsl(0, 0%, 100%), 1px 1px hsl(0, 0%, 100%), -1px -1px 0 hsl(0, 0%, 100%), 1px -1px 0 hsl(0, 0%, 100%), -1px 1px 0 hsl(0, 0%, 100%);

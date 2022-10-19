@@ -1,0 +1,86 @@
+// SECCIÓN DONDE SE MOSTRARÁN POR FILAS LOS DIFERENTES PRODUCTOS UNA VEZ FILTRADOS
+
+.products-gallery{
+
+    display:flex;
+
+    .products-gallery-item{
+
+        border: 0.5rem;
+        border-radius: 5%;
+        border-style: solid;
+        height: 40vh;   
+        margin-bottom: 4rem;
+        position: relative;
+
+        .products-gallery-item-price{
+    
+            background-color: $products-gallery-item-price-background-color;
+            color: $products-gallery-item-price-color;
+            font-size: 1rem;
+            position: absolute;
+            right: 0.1rem;
+            top: 1rem;
+
+            .products-gallery-item-price span{
+            
+                font-size: 2rem;
+
+            }
+    
+        }
+        
+        
+        .products-gallery-item-image{
+        
+            height: 60%;
+
+            .products-gallery-item-image img{
+        
+                border-top-left-radius:5%;
+                border-top-right-radius: 5%;
+
+            }
+    
+        }
+        
+        
+        .products-gallery-item h2{
+        
+            font-size: 1.5rem;
+
+        }
+
+        .products-gallery-item-description{
+        
+            align-items: center;
+            border-bottom: solid;
+            display: flex;
+            height: 20%;
+            justify-content: center;
+        
+        }
+        
+        
+        .product-gallery-item-button button{
+            background-image: $products-gallery-item-button_button-background-image-gradient;
+            display: flex;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            width: 100%;
+
+        }
+        
+        .product-gallery-item-button button a{
+
+            width: 100%;
+
+        }
+
+    
+    }
+        
+}
+

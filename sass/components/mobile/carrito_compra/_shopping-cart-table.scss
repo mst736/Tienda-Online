@@ -1,0 +1,67 @@
+// TABLA DE RESUMEN DEL PRECIO DEL PRODUCTO CON IMPORTE SIN IVA,IVA, TRANSPORTE, ETC.
+
+.shopping-cart-table{
+
+    margin-top: 1.5rem;
+
+    // PROPIEDADES AL ELEMENTO <table> del HTML
+
+    .shopping-cart-table table{
+
+        border-collapse: separate;
+        border-spacing: 0 1rem;
+        width: 100%;
+
+            // PROPIEDADES AL ELEMENTO <td> celdas de la tabla en HTML
+
+        .shopping-cart-table td{
+
+            text-align: center;
+
+                    
+            // PROPIEDADES AL ELEMENTO <img> dentro de la celda de la tabla en HTML
+
+        .shopping-cart-table td img{
+
+            border:0.25rem solid;
+        }
+
+        // PROPIEDA DE BORDE SÓLO A LAS CELDAS DE LA PRIMERA FILA DE LA TABLA
+
+        .td-border-top{
+
+            border-top: solid;
+            padding-top: 0.75rem;
+        }
+
+        // PROPIEDAD DE ANCHURA ESPECÍFICA PARA EL SELECTOR DE CANTIDAD DE LA TABLA EN ÚLTIMA CELDA DE CADA FILA
+
+        .td-border-top > .product-quantity-selector, .td-row > .product-quantity-selector{
+            
+            width: 75%;
+
+        }
+
+        }
+
+        // PROPIEDAD DE ANCHURA ESPECÍFICA PARA LA PRIMERA CELDA DE CADA FILA
+        
+        .shopping-cart-table tr td:nth-child(1){
+
+            width: 10%;
+        }
+        
+        // PROPIEDAD DE ANCHURA ESPECÍFICA PARA LA CUARTA CELDA DE CADA FILA
+
+        .shopping-cart-table tr td:nth-child(4){
+            
+            width: 10%;
+        }
+        
+
+
+    }
+
+
+}
+

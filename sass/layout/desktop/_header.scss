@@ -1,0 +1,67 @@
+.header{
+
+    align-items: center;
+    background-color: $primary-color;
+    box-shadow: 10px -5px 48px 3px $header-box-shadow-color;
+    border: 5px solid;
+    color: $header-text-color;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2% 1rem 2%;
+    min-height: 10vh;
+    width: 96%;
+    z-index: $z-index-header;
+
+    .header-logo{
+
+        display: flex;
+        justify-content: start;
+
+        .header-logo-icon{
+            height: 3rem;
+            width: 3rem;
+        
+            margin-right: 5%;
+        }
+        
+        .header-logo-icon svg{
+
+            height: 3.5rem;
+            width: 3.5rem;
+            
+            path{
+
+                fill:$secondary-color;
+            }
+        }
+
+        .header-logo-title{
+
+            margin-left: 1rem;
+
+            span{
+
+                font-size: 2.5rem;
+                text-align: left;
+            }
+        }
+    }
+
+    .header-menu{
+
+        display: flex;
+        justify-content: end;    
+        margin-left: auto;
+        width: max-content;
+
+        ul li{
+            color: $header-menu-ul_li-color;
+            cursor: pointer;
+            display: inline;
+            font-size: 2.5rem;
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+
