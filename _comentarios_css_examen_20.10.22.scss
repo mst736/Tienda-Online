@@ -1,0 +1,360 @@
+/* SECCIÓN HEADER Y TODOS SUS ELEMENTOS */
+
+
+
+.header{
+
+    align-items: center; /* ALINEAMOS VERTICALMENTE DIV HEADER-LOGO Y HEADER-MENU (HIJOS DIRECTOS DE SU PADRE HEADER)*/
+    background-color: $primary-color; /* ASIGNAMOS VALOR A PROPIEDAD BACKGROUND-COLOR MEDIANTE EL USO DE VARIABLE DECLARADO EN ARCHIVO _variables.scss DONDE SE ASIGNARÁ EL VALOR CONCRETO QUE ARRASTRARÁ ESTA VARIABLE*/
+    box-shadow: 10px -5px 48px 3px $header-box-shadow-color; /* EN ESTA PROPIEDAD CREAMOS UNA SOMBRA CON 4 VALORES DE CONFIGURACIÓN ( DISTANCIA CON RESPECTO A LA ESQUINA BOTTOM-LEFT DONDE EMPIEZA EMPIEZA LA SOMBRA, LONGITUD VERTICAL DE LA SOMBRA, PUNTO COMIENZO DIFUMINADO DE LA SOMBRA  */
+    border: 5px solid; /* PROPIEDAD QUE DETERMINA VALORES PARA EL MARCO ENVOLTURA DEL DIV DONDE SE APLICA; EL VALOR DE "5PX" NOS INFORMA DEL GROSOR DEL BORDE (TOP,RIGHT,BOTTOM Y LEFT PODEMOS APLICAR DE 1 A 4 PARÁMETROS EN FUNCIÓN DE SI QUEREMOS) Y "SOLID" NOS APLICA ESTE ESTILO GRÁFICO AL BORDE (VIENE POR DEFECTO SINÓ SE ESPECIFICA NINGÚN VALOR PARA BORDER-STYLE)*/
+    color: $header-text-color; /* ESTA PROPIEDAD DETERMINA EL COLOR A APLICAR AL CONTENIDO DE TEXTO DENTRO ESTE DIV, CUYO VALOR PARA COLOR SE APLICA MEDIANTE VARIABLE EN ARCHIVO _variables.scss*/
+    display: flex; /* ESTA PROPIEDAD INDICA AL DIV DONDE SE APLICA, QUE SE CONVERTIRÁ EN UNA CAJA FLEXIBLE PARA PODER DISTRIBUIR LOS COMPONENTES Y/O CAJAS DEPENDIENTES DE LA MISMA*/
+    justify-content: space-between; /* JUNTO CON LA PROPIEDAD DISPLAY: FLEX ESTAMOS ESPECIFICANDO LA DISTRIBUCIÓN HORIZONTAL DE LOS ELEMENTOS HIJOS CUYO VALOR PUEDE SER SPACE-BETWEEN, SPACE-AROUND, FLEX-START, FLEX-END, CENTER, SPACE-EVENLY, ETC*/
+    margin: 0 2% 1rem 2%; /* DETERMINA LA DISTANCIA HORIZONTAL (RIGHT, LEFT) O VERTICAL (TOP, BOTTOM) ENTRE BORDES DE VARIOS DIVS, EL VALOR DE BORDER-RIGHT "2%" TOMA COMO REFERENCIA LA  DIMENSION ACTUAL DE SU DIV PADRE Y VALOR BORDER-BOTTOM DE "1rem (UNIDAD ABSOLUTA)" TOMA COMO REFERENCIA EL VALOR DE FONT-SIZE DE LA ETIQUETA BODY (SINO SE ESPECIFICA SE TOMA 1rem=16px)*/
+    min-height: 10vh; /* PROPIEDAD DE ALTURA MÍNIMA PARA ESTE DIV, VH ES UNA UNIDAD RELATIVA CON RESPECTO A LA PANTALLA DEL USUARIO (LA CUAL ES IGUAL A 100VH) DE ESTA MANERA CONSIGUES QUE LAS REDIMENSIOANES DE LOS CONTENIDOS SE AJUSTE CORRECTMANTE A LA RESOLUCIÓN DE CADA PANTALLA*/
+    width: 96%; /* UNIDA RELATIVA DE ANCHURA ACTUAL DE LA CAJA*/
+    z-index: $z-index-header; /* PROPIEDAD DE DISTRIBUCIÓN POR CAPAS DE ELEMENTOS MEDIANTE LA CUAL SE DETERMINA EN APILAMIENTO DE UN ELEMENTO PRINCIPAL (EL CUAL RECIBIRÁ EL VALOR DE "POSITION:RELATIVE") CON RESPECTO A OTROS (EL CUAL RECIBIRÁ EL VALOR DE "POSITION:ABSOLUTE") QUE COMBINADOS CON LAS PROPIEDADES (TOP,RIGHT, BOTTOM, LEFT: Xrem o Xvh) NOS PERMITIRÁN COLOCAR A LOS HIJOS CON RESPECTO AL PADRE- SE RECOMIENDA GUARDAR EN VARIABLE UN VALOR ESTANDAR POR TIPO DE ELEMENTO A ORGANIZAR(*/
+
+    .header-logo{
+
+        display: flex;
+        justify-content: start; /* JUNTO CON LA PROPIEDAD DISPLAY: FLEX ESTAMOS ESPECIFICANDO LA QUE NUESTROS ELEMENTOS SE COLOQUEN HORIZONTALMENTE A LA IZQUIERDA  DENTRO DEL DIV PADRE*/
+
+        .header-logo-icon{
+            height: 3rem; /* PROPIEDAD DE ALTURA ESPECÍFICA DE SU DIV, EN ESTE CASO 3rem EQUIVALE A 3x 16px (1rem=16px) =48px*/
+            width: 3rem;  /* PROPIEDAD DE ANCHURA ESPECÍFICA DE SU DIV, EN ESTE CASO 3rem EQUIVALE A 3x 16px (1rem=16px) =48px*/
+        
+            margin-right: 5%; /* PROPIEDAD DE DISTANCIA  CON RESPECTO AL DIV DE SU DERECHA, CUYO VALOR DE "5%" NOS INDICA QUE LA DISTANCIA ENTRE AMBOS SERÁ DE UN 5% DE LA ANCHURA DEL DIV PADRE QUE LOS CONTIENE*/
+        }
+        
+        .header-logo-icon svg{ /* EN ESTE CASO ESTAMOS COMBINANDO UN SELECTOR DE TIPO CLASE ".header-logo-icon" CON UNO DE TIPO ELEMENTO "SVG" DE ESTA MANERA ESTAMOS APLICANDO LAS PRODIEDADES SÓLO A AQUELLOS ELEMENTOS SVG QUE SEA HIJOS DIRECTOS DE LA CLASE ".header-logo-icon".*/
+
+            height: 3.5rem;
+            width: 3.5rem;
+            
+            path{
+
+                fill:$secondary-color; /* PROPIEDAD DE ASIGNACIÓN DE COLOR PARA LOS ELEMENTOS "ICONO" EN FORMATO SVG IMAGEN DE REESCALADO VECTORIAL (NO PIERDE CALIDAD AL AMPLIARSE). ESTA PROPIEDAD TOMA COMO VALOR LA VARIABLE $secondary-color (SISTEMA DE COLORES RECOMENDADO HSL) CON VALOR ESPECIFICO DECLARADO EN EL ARCHIVO  _variables.scss */
+            }
+        }
+
+        .header-logo-title{
+
+            margin-left: 1rem; /* PROPIEDAD DE DISTANCIA  CON RESPECTO AL DIV DE SU IZQUIERDA, CUYO VALOR DE "5%" NOS INDICA QUE LA DISTANCIA ENTRE AMBOS SERÁ DE UN 5% DE LA ANCHURA DEL DIV PADRE QUE LOS CONTIENE*/
+
+            span{
+
+                font-size: 2.5rem; /* PROPIEDAD QUE NOS INDICA EL TAMAÑO DE LETRA QUE QUERAMOS ASIGNAR A UN ELEMENTO DE TEXTO DETERMINADO: YA SEAN <input>, <textarea>, <p>, <title>, cabeceras (h1..h6).etc*/
+                text-align: left;  /* PROPIEDAD QUE NOS PERMITIRÁ ALINEAR A LA IZQUIERDA DENTRO SU DIV PADRE EN ESTE CASOUN TEXTO DE TIPO SPAN*/
+            }
+        }
+    }
+
+    .header-menu{
+
+        display: flex;
+        justify-content: end;    /* JUNTO CON LA PROPIEDAD DISPLAY: FLEX ESTAMOS ESPECIFICANDO QUE NUESTROS ELEMENTOS SE COLOQUEN HORIZONTALMENTE A LA DERECHA DENTRO DEL DIV PADRE*/
+        margin-left: auto; /* PROPIEDAD QUE NOS PERMITIRÁ ESTABLECER LA DISTANCIA HORIZONTAL IZQUIERDA CON RESPECTO A SU DIV PADRE (.COLUMN) EN FUNCIÓN AL ESPACIO OCUPADO POR LOS OTROS ELEMENTOS DENTRO DE SU PADRE EN EL CASO DE QUE LOS HAYA*/
+        width: max-content; /* ESTA PROPIEDAD DETERMINA DE MANERA AUTOMÁTICA LA DIMENSIÓN DEL ELEMENTO CONTENEDOR EN FUNCIÓN AL TAMAÑO DEL ELEMENTO CONTENIDO DENTRO DEL MISMO*/
+
+        ul li{
+            color: $header-menu-ul_li-color;
+            cursor: pointer; /* PROPIEDAD QUE INDICA LA FORMA A TOMAR POR EL CURSOR DE NUESTRO RATÓN A LA HORA DE PASAR POR ENCIMA YA SEA DE UN BOTÓN, ENLACE,ETC */
+            display: inline; /* ESTA PROPIEDAD NOS PERMITE COLOCAR TODOS LOS ELEMENTOS DE TIPO <LI> DE DE ESTA LISTA NO NUMERADA (UL) HORIZONTALMENTE EN LÍNEA*/
+            font-size: 2.5rem;
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+// SLIDER Y TODOS SUS ELEMENTOS */
+
+// DIV SLIDER PARA UBICAR IMAGEN, TITULO Y BOTÓN
+
+.slider{ /*EN ESTA SECCIÓN DE NUESTRA PÁGINA PRINCIPAL SE UBICAN LA IMAGEN PRINCIPAL DE FONDO, UN TÍTULO PRINCIPALL CALL TO ACTION, Y UN BOTÓN DE RESERVA*/
+
+    display: flex; /* ESTA PROPIEDAD INDICA AL DIV DONDE SE APLICA, QUE SE CONVERTIRÁ EN UNA CAJA FLEXIBLE PARA PODER DISTRIBUIR LOS COMPONENTES Y/O CAJAS DEPENDIENTES DE LA MISMA*/
+    position: relative; /* ESTA PROPIEDA DE POSICIONAMIENTO NOS PERMITE COLOCAR POR CAPAS EL RESTO DE ELEMENTO CONTENIDOS DENTRO DE ESTA SECCIÓN, "POSITION: RELATIVE" DETERMINA QUE ESTE ELEMENTO SERÁ EL EJE DE COORDENADAS A PARTIR DEL CUAL SE MOVERÁN LOS OTROS ELEMENTOS QUE TENGAN ASIGNADA LA PROPIEDAD:VALOR "POSITION:ABSOLUTE"*/
+    margin-bottom: 1.5rem; /* DISTANCIA CON RESPECTO AL DIV*/
+
+    // IMAGEN DE FONDO SLIDER
+
+    .slider-image{
+        width: 100%; /* UNIDAD RELATIVA DE AMPLITUD DEL DIV QUE CONTENDRÁ LA IMAGEN PRINCIPAL DE LA HOME, EL VALOR DE 100% DETERMINA QUE LA DIMENSIÓN DE ESTE DIV SERÁ IGUAL A LA DIMENSIÓN ACTUAL DE SU PADRE, EL WIDTH RELATIVO TAMBIÉN AFECTA EL HEIGHT DE DICHO DIV*/
+    }
+    
+    // TÍTULO SLIDER
+
+    .slider-title{
+        background-color: $slider-title-background-color;        
+        top: 7vh; /* JUNTO CON "CON POSITION: ABSOLUTE" I TOMANDO COMO REFERENCIA EL BORDE SUPERIOR (TOP) DEL DIV CON "POSITION: RELATIVE"; ESTAMOS INDICANDO QUE ESTE ELEMENTO TÍTULO SE DEBE COLOCAR A 7vh DE DISTANCIA VERTICAL CON RESPECTO AL TOP DE SU DIV PADRE ".SLIDER"*/
+        left: 3rem; /* JUNTO CON "CON POSITION: ABSOLUTE" I TOMANDO COMO REFERENCIA EL BORDE IZQUIERDO (LEFT) DEL DIV CON "POSITION: RELATIVE"; ESTAMOS INDICANDO QUE ESTE ELEMENTO TÍTULO SE DEBE COLOCAR A 3.5rem (56px) DE DISTANCIA HORIZONTAL CON RESPECTO AL LEFT BORDER DE SU DIV PADRE ".SLIDER"*/
+        position: absolute;
+        width: 40%; /* EN ESTE CASO HEMO ESTABLECIDO QUE LA ANCHURA RELATIVA DEL TÍTULO DEBERÁ SER DEL 40% DEL TAMAÑO DE SU DIV PADRE ".SLIDER"*/
+    }
+
+    // BOTÓN SLIDER
+
+    .slider-button{
+        left: 3rem;
+        position: absolute;
+        top: 18.5vh;    
+        width: max-content; /* CON ESTE VALOR DE LA PROPIEDAD WIDTH (MAX-CONTENT) EL TAMAÑO DEL BOTÓN SE REESCALARÁ EN FUNCIÓN DEL CONTENIDO (NORMALMENTE TEXTO) DENTRO DE MISMO"*/
+    }
+    
+}
+
+
+
+/* FORMULARIO Y TODOS SUS ELEMENTOS */
+
+
+
+/* EN NUESTRO CASO. EL ESQUELETO DEL FORMULARIO ESTÁ COMPUESTO DEUN DIV CON CLASE "DOS COLUMNAS" Y DENTRO DE LA MISMA 2 DIVS CON CLASE "UNA COLUMNA" QUE DARÁN LUGAR A LA FILAS DE CADA FORMULARIO CON 2 INPUTS POR FILA, ESTE DIV "COLUMNAS SE REPLICARÁ TANTAS VECES COMO FILAS NECESITEMOS PARA NUESTRO FORMULARIO DE LA WEB*/
+
+.form-element{ /* TODO DIV FORM-ELEMENT EN ESTE CASO ESTÁN FORMADOS POR UN ELEMENTO (CLASE .FORM-ELEMENT SELECTOR HTML (input o label) RESPECTIVAMENTE */
+    
+    margin-bottom: 1.5rem;
+    width: 100%; /* ESTABLECE UNA ANCHURA DEL "100%" DE SU DIV PADRE ".COLUMN"*/
+
+    // CAMPO DONDE EL USUARIO PUEDE ESCRIBIR EL MENSAJE QUE DESEE
+
+    .form-element textarea{ /* ELEMENTO DE FORMULARIO TIPO AREA DE TEXTO DONDE EL USUARIO PUEDE INTRODUCIR EL TEXTO QUE CONSIDERE, SE PUEDE DELIMITAR EL MÁXIMO DE CARACTERES */
+
+        height: 20vh; /* SE ESTABLECE UN ALTURA FIJA PARA ESTE CAMPO DE 20vh (20% DE LA PANTALLA DEL USUARIO) */
+        padding: 0.5rem; /* ESTA PROPIEDAD NO ESTÁ DETERMINANDO LA DISTANCIA ENTRE EL CONTENIDO (TEXTO A ESCRIBIR EN CAMPO TEXTAREA EN ESTE CASO) Y EL BORDE DEL DIV QUE LO CONTIENE */
+        width: 100%;
+    }
+
+    // TÍTULO DE NOMBRE DEL INPUT EN SU PARTE SUPERIOR
+
+    .form-element-label{ /* ESTE CAMPO DETERMINA EL NOMBRE QUE RECIBIRÁ EL CAMPO DE MÁS ABAJO DE TIPO INPUT*/
+
+        margin: 0rem 0 0.5rem 0rem; /* EN ESTE CASO ESTAMOS DICIENDO QUE LA DISTANCIA ENTRE EL STRING DE  LABEL Y EL CAMPO DE MÁS ABAJO DE TIPO INPUT SEA DE 0.5rem*/
+
+        .form-element-label label{
+
+            font-size: 2.5rem;
+    
+        }
+    
+        
+    }
+    // CAMPO DONDE SELECCIONAREMOS O INTRODUCIREMOS EL VALOR QUE CORRESPONDA
+
+    .form-element-input{ /* EN ESTE DIV INCLUIREMOS EL ELEMENTO HTML INPUT QUE PODRÁ TOMAR LOS VALORES TIPO (STRING, INT,SELECT,ETC) DENTRO DE ESTE CAMPO */
+
+        margin-top: 1.5rem;
+        width: 100%;
+
+        .form-element-input input{ /* EN ESTE CASO ESTAMOS APLICANDO LAS PROPIEDADES INFERIORES A TODO ELEMENTO HTML INPUT QUE SE ENCUENTRE DENTRO UN ELEMENTO CON CLASE ".form-element-input" */
+
+            border-style: solid; /* */
+            border-width: 0.2rem; /* ESTABLECEMOS UN GROSOR DE BORDE DE 0.2rem AL CAMPO INPUT DE FORMULARIO*/
+            font-size: 2rem;
+            padding: 0.5rem;
+            width: 100%;
+
+        }
+    
+        // INPUT DE TIPO SELECCIÓN DE OPCIONES
+    
+        .form-element-input select{ /* ESTABLECEMOS PROPIEDADES AL CAMPO DE TIPO SELECT (LISTA DESPLEGABLE CON OPCIONES) DENTRO DEL ELEMENTO INPUT DE FORMULARIO */
+
+            border-style: solid;
+            border-width: 0.2rem;
+            font-size: 2rem;
+            padding: 0.5rem;
+            width: 100%;
+
+        }
+    
+    }
+
+
+}
+
+
+/* BOTÓN DE MÁS O MENOS (SELECTOR CANTIDAD) */
+
+//SELECTOR DE CANTIDAD
+
+.product-quantity-selector{ /* ESTE DIV NOS PERMITE SELECCIONAR LA CANTIDAD DESEADA DEL PRODUCTO SELECCIONADO EN NUESTRA WEB*/
+
+    display: flex;
+    width: 20%;
+
+    //BOTÓN MINUS CANTIDAD SELECTOR 
+
+    .product-quantity-selector-minus{
+
+        width: 40%; /* ESTA PROPIEDAD DE ANCHURA ESTABLECE QUE EL BOTÓN MINUS TENDRÁ UNA AMPLITUD DEL 40% DEL DIV ".PRODUCT-QUANTITY_SELECTOR" QUE ALOJARÁ TODO EL BOTÓN SELECTOR */
+
+        .product-quantity-selector-minus button{ /*ESTABLECEMOS PROPIEDADES AL ELEMENTO BUTTON CUYO PADRE ES LA CLASE ".product-quantity-selector-minus button"*/
+
+            background-image: $product-quantity-selector-button-background-image-gradient; /*SE ESTABLECE UN FONDO DE BOTÓN DE TIPO GRADIENTE QUE PUEDE SER DE TIPO LINEAL O RADIAL CUYOS PÁRAMETROS PARA DETERMINAR SU VALOR SON COLOR INICIO Y FIN DEL DEGRADADO, DIRECCIÓN O ÁNGULO EL DEGRADADO*/
+            border-bottom-left-radius: 10%; /* ESTA PROPIEDAD DETERMINA EL RADIO DE CURVATURA DE LAS ESQUINAS DEL ELEMENTO DONDE SE ENCUENTRE DICHA PROPIEDAD, A PARTIR DEL VALOR MÁXIMO DEL 20% NO TIENE MAYOR EFECTO, EN ESTE CASO ESTAMOS APLICANDO UNA CURVATURA A LA PARTE INFERIOR IZQUIERDA DEL DIV EN CUESTIÓN*/
+            border-style:solid;
+            border-top-left-radius: 10%;
+            border-width: 0.4rem; /* SE ESTABLECE UN GROSOR DE BORDE PARA ESTE BOTÓN DE SELECCIÓN DE 0.4rem */
+            cursor: pointer;
+            width: 100%;
+    
+        }    
+
+    }
+
+
+
+    //CAMPO VALOR DE CANTIDAD SELECTOR 
+
+    .product-quantity-selector-value{
+
+        width: 20%;
+
+        .product-quantity-selector-value input{
+
+            border-right: none;
+            border-left: none;
+            border-color: $product-quantity-selector-value-input-color;
+            border-style:solid;
+            border-width: 0.4rem;
+            text-align: center;
+            width: 100%;
+    
+        }
+    
+
+    }
+
+
+    //BOTÓN PLUS CANTIDAD SELECTOR 
+
+    .product-quantity-selector-plus{
+
+        width: 40%;
+
+        .product-quantity-selector-plus button{
+
+            background-image: $product-quantity-selector-button-background-image-gradient;
+            border-bottom-right-radius: 10%;
+            border-style:solid;
+            border-top-right-radius: 10%;
+            border-width: 0.4rem;
+            cursor: pointer;
+            width: 100%;
+
+        }
+    
+
+    }
+
+
+}
+
+/* GALERÍA DE PRODUCTOS */
+
+// SECCIÓN DONDE MOSTRAMOS EL TEXTO DE NUMERO DE PRODUCTOS MOSTRADOS DESPUÉS DE FILTRAR LOS PRODUCTOS EN DROP DOWN MENU POR CATEGORIAS
+
+.products-results{ /* EN ESTA SECCIÓN CON CLASE PADRE "TWO-COLUMNS" NOS ENCONTRAMOS DOS CAJAS CON LA INFORMACIÓN DE TEXTO RESULTADO DE PRODUCTOS FILTRADO Y BOTÓN DROP-DOWN DONDE SELECCIONAMOS CATEGORÍA DE PRODUCTO A FILTRAR */
+
+
+    margin-bottom: 2rem; 
+
+    .products-results-drop-down{
+
+        display: flex;
+        justify-content: end;
+    
+    }
+
+
+// SECCIÓN DONDE SE MOSTRARÁN POR FILAS LOS DIFERENTES PRODUCTOS UNA VEZ FILTRADOS
+
+.products-gallery{
+
+    display:flex; /* CREAMOS UN DIV PRINCIPAL */
+
+    .products-gallery-item{
+
+        border: 0.5rem;
+        border-radius: 5%;
+        border-style: solid;
+        height: 40vh;   
+        margin-bottom: 4rem;
+        position: relative;
+
+        .products-gallery-item-price{
+    
+            background-color: $products-gallery-item-price-background-color;
+            color: $products-gallery-item-price-color;
+            font-size: 1rem;
+            position: absolute;
+            right: 0.1rem;
+            top: 1rem;
+
+            .products-gallery-item-price span{
+            
+                font-size: 2rem;
+
+            }
+    
+        }
+        
+        
+        .products-gallery-item-image{
+        
+            height: 60%;
+
+            .products-gallery-item-image img{
+        
+                border-top-left-radius:5%;
+                border-top-right-radius: 5%;
+
+            }
+    
+        }
+        
+        
+        .products-gallery-item h2{
+        
+            font-size: 1.5rem;
+
+        }
+
+        .products-gallery-item-description{
+        
+            align-items: center;
+            border-bottom: solid;
+            display: flex;
+            height: 20%;
+            justify-content: center;
+        
+        }
+        
+        
+        .product-gallery-item-button button{
+            background-image: $products-gallery-item-button_button-background-image-gradient;
+            display: flex;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            width: 100%;
+
+        }
+        
+        .product-gallery-item-button button a{
+
+            width: 100%;
+
+        }
+
+    
+    }
+        
+}
+
+    
+

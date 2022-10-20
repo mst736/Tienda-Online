@@ -1,8 +1,9 @@
 // DIV SLIDER PARA UBICAR IMAGEN, TITULO Y BOTÓN
 
-.slider{
-    display: flex;
-    position: relative;
+.slider{ 
+
+    display: flex; 
+    position: relative; 
     margin-bottom: 1.5rem;
 
     // IMAGEN DE FONDO SLIDER
@@ -14,7 +15,9 @@
     // TÍTULO SLIDER
 
     .slider-title{
-        background-color: $slider-title-background-color;        top: 7vh;
+        
+        background-color: $slider-title-background-color;        
+        top: 7vh;
         left: 3rem;
         position: absolute;
         width: 40%;
