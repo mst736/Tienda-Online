@@ -419,8 +419,10 @@ a:hover, a:focus {
 
 body {
   background-color: hsl(226deg, 63%, 45%);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-size: 20px;
   margin: 1rem 0;
   min-height: 100vh;
   width: 100%;
@@ -966,6 +968,7 @@ footer .footer-element p {
   height: 40vh;
   margin-bottom: 4rem;
   position: relative;
+  width: max-content;
 }
 .products-gallery .products-gallery-item .products-gallery-item-price {
   background-color: hsl(251deg, 2%, 10%);
