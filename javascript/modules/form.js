@@ -1,19 +1,12 @@
 
-export let plus_minus_button = () => {
+export let form = () => {
 
-    let buttonMinus = document.querySelector('product-quantity-selector-minus button');
-    let buttonValue = document.querySelector('product-quantity-selector-value input');
-    let buttonPlus = document.querySelector('product-quantity-selector-plus button');
+    let buttonMinus = document.querySelector('.product-quantity-selector-minus button');
+    let buttonValue = document.querySelector('.product-quantity-selector-value input');
+    let buttonPlus = document.querySelector('.product-quantity-selector-plus button');
 
     buttonMinus.addEventListener("click", () => {
                 
-            if (!event.target.matches('product-quantity-selector-value input')) return;
-            console.time('bubbling');
-            event.preventDefault();
-            const element = document.getElementById(event.target.dataset.target);
-            element.scrollIntoView();
-            console.timeEnd('bubbling');
-
             if(buttonMinus) {
 
                 buttonValue.value = parseInt(buttonValue.value) - 1;
@@ -32,9 +25,6 @@ export let plus_minus_button = () => {
     
                 }
                 }
-
-
-                
     });
 
 

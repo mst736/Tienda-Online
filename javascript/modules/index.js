@@ -6,5 +6,8 @@
 // "from" para indicar el nombre del archivo que contiene el módulo. 
 
 import {plus_minus_button} from '/javascript/modules/plus_minus_button.js';
+import {form} from '/javascript/modules/form.js';
+
 
 plus_minus_button();
+form()
