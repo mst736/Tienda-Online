@@ -16,7 +16,7 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,700;1,300;1,400&display=swap" rel="stylesheet">
         
-        <link href="/style/app.css" rel="stylesheet"> <!--enlace interno al archivo style.css tipo de recurso a cargar etiqueta con autocierra -->
+        <link href="/style/app.css" rel="stylesheet">
 
         <title>Carrito de la Compra</title>
         
@@ -83,23 +83,29 @@
                                     <td class="td-border-top">
                                         <img src="/imagenes/carrito_compra/hombres_mountain_bike_campo.jpg" alt="hombres mountain bike campo">
                                     </td><!--MINIATURA PRODUCTO SELECCIONADO, NO ME FUNCIONA-->
-                                    <td class="td-border-top">Bicicleta mountain bike Kona</td><!--TÍTULO PRODUCTO SELECCIONADO-->
-                                    <td class="td-border-top">15€/día</td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products-->
-                                    <td class="td-border-top"><!--SELECTOR DE DÍAS-->
+                                    <td >Bicicleta mountain bike Kona</td>TÍTULO PRODUCTO SELECCIONADO
+                                    <td >15€/día</td><!--PRECIO POR DÍA, EL VALOR DE PRECIO SE PUEDE VINCULAR A LA BASE DE DATOS DE PRECIOS DE products-->
+                                    <td ><!--SELECTOR DE DÍAS-->
+
                                         <div class="product-quantity-selector">
                         
                                             <div class="product-quantity-selector-minus">
+
                                                 <button>-</button>
-                                            </div><!--SELECTOR DÍAS (-)-->
+
+                                            </div>
+
                                             <div class="product-quantity-selector-value">
 
-                                                <input type="number" value = "1" readonly>
+                                                <input type="number" value="1" readonly>
 
-                                            </div><!--VALOR DÍAS-->
-                                            
+                                            </div>
+
                                             <div class="product-quantity-selector-plus">
+
                                                 <button>+</button>
-                                            </div><!--SELECTOR DÍAS (+)-->
+
+                                            </div>
                                             
                                         </div>
                                     </td>
@@ -114,15 +120,21 @@
                                         <div class="product-quantity-selector">
                         
                                             <div class="product-quantity-selector-minus">
+
                                                 <button>-</button>
+
                                             </div><!--SELECTOR DÍAS (-)-->
+
                                             <div class="product-quantity-selector-value">
 
-                                                <input type="number" value = "1" readonly>
+                                                <input type="number" value="1" readonly>
 
                                             </div><!--VALOR DÍAS-->
+
                                             <div class="product-quantity-selector-plus">
+
                                                 <button>+</button>
+
                                             </div><!--SELECTOR DÍAS (+)-->
                                             
                                         </div>
@@ -133,31 +145,55 @@
                             </table>
                         </div>
                         <div class="shopping-cart-checkout-summary">
+
                             <div class="checkout-summary"><!--RESUMEN DE LA COMPRA, ME LO TRAJE DE PÁGINA CHECKOUT-->
+
                                 <div class="summary-title">
+
                                     <h3>Checkout Summary</h3>
+
                                 </div>
+
                                 <table> <!--TABLA CON INFORMACIÓN IVA, TRANSPORTE Y TOTAL-->
+
                                     <tbody><tr><!--FILA COMPRA SIN IVA-->
+
                                         <td> VAT Free Amount</td><!--TÍTULO COMPRA SIN IVA-->
+
                                         <td>150€</td><!--VALOR EN EUROS COMPRA SIN IVA-->
+
                                     </tr>
+
                                     <tr><!--FILA IMPORTE IVA-->
+
                                         <td>VAT</td><!--TÍTULO IMPORTE IVA-->
+
                                         <td>30€</td><!--VALOR EN EUROS IMPORTE IVA-->
+
                                     </tr>
+
                                     <tr><!--FILA COMPRA SIN IVA-->
+
                                         <td>Transport</td><!--TÍTULO IMPORTE TRANSPORTE-->
+
                                         <td>75€</td><!--VALOR EN EUROS IMPORTE TRANSPORTE-->
+
                                     </tr>
+
                                     <tr><!--FILA TOTAL COMPRA-->
+
                                         <td>Total</td><!--TÍTULO TOTAL COMPRA (IMPORTE SIN IVA+ IMPORTE IVA+ IMPORTE TRANSPORTE)-->
+
                                         <td>255€</td><!--VALOR EN EUROS TOTAL COMPRA-->
+
                                     </tr>
                                     
                                 </tbody></table>
+
                             </div>
+
                         </div>
+
                         <div class="shopping-cart-resume-buttons"><!--DIV VOLVER Y COMENZAR DENTRO DE RESUMEN DE LA COMPRA-->
                             <div class="one-column">
                                 <div class="column">
