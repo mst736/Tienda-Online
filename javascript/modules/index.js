@@ -1,9 +1,11 @@
 import {plusMinusButton} from './plusMinusButton.js';
 import {tabs} from './tabs.js';
-
-//import {form} from './form.js';
+import {formCharactersValidation} from './formCharactersValidation.js';
+import {formsubmittion} from './formsubmittion.js';
 
 
 plusMinusButton();
 tabs();
-//form();
+formCharactersValidation();
+
+formsubmittion();

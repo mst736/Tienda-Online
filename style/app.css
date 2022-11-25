@@ -709,12 +709,8 @@ footer .footer-element p {
 }
 
 .form-element {
+  color: white;
   margin-bottom: 1.5rem;
-  width: 100%;
-}
-.form-element .form-element textarea {
-  height: 20vh;
-  padding: 0.5rem;
   width: 100%;
 }
 .form-element .form-element-label {
@@ -740,6 +736,16 @@ footer .footer-element p {
   font-size: 2rem;
   padding: 0.5rem;
   width: 100%;
+}
+.form-element .form-element-input textarea {
+  height: 20vh;
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-element .form-element-counter {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .reset-button {

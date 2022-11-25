@@ -2,18 +2,12 @@
 // PROPIEDADES GLOBALES PARA CADA ELEMENTO DEL FORMULARIO INDEPENDIENTEMENTE DEL TIPO QUE SEAN
 
 .form-element{
-    
+    color: white;
     margin-bottom: 1.5rem;
     width: 100%;
 
     // CAMPO DONDE EL USUARIO PUEDE ESCRIBIR EL MENSAJE QUE DESEE
 
-    .form-element textarea{
-
-        height: 20vh;
-        padding: 0.5rem;
-        width: 100%;
-    }
 
     // TÍTULO DE NOMBRE DEL INPUT EN SU PARTE SUPERIOR
 
@@ -36,7 +30,7 @@
         margin-top: 1.5rem;
         width: 100%;
 
-        .form-element-input input{
+        .form-element-input input {
 
             border-style: solid;
             border-width: 0.2rem;
@@ -45,6 +39,7 @@
             width: 100%;
 
         }
+
     
         // INPUT DE TIPO SELECCIÓN DE OPCIONES
     
@@ -59,6 +54,21 @@
         }
     
     }
+    .form-element-input textarea{
+
+        height: 20vh;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .form-element-counter {
+
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-top: 1rem;
+
+    }
+
 
 
 }

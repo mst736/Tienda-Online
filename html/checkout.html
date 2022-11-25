@@ -15,10 +15,6 @@
         <meta name="keywords"    content="palabras clave, separadas, por comas">
 
         <link href="/style/app.css" rel="stylesheet"> <!--enlace interno al archivo style.css tipo de recurso a cargar etiqueta con autocierra -->
-<<<<<<< HEAD
-=======
-
->>>>>>> 595af50b759e213986650dc8e3c40a68b43c8778
     </head>
     
    
@@ -84,12 +80,13 @@
 
                                                 <div class="form-element-label">
 
-                                                    <label for="fname">First Name</label>
+                                                    <label data-id="fname">First Name</label>
                                                 </div>
 
                                                 <div class="form-element-input">
 
-                                                    <input type="text" id="fname" name="firstname" placeholder="What's your Name?">
+                                                    <input type="text" data-id="fname" name="firstname" placeholder="What's your Name?" data-max="15">
+                                                    <span id="caracters-left">X CHARACTERS</span>
 
                                                 </div>
 
