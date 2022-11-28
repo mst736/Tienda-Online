@@ -8,14 +8,13 @@ export let formCharactersValidation = () => {
             
             let arrayString = formInput.closest('.form-element').querySelector('.validate-characters');
 
-                //console.log(formInput.dataset.max);
 
             if (arrayString.value.length == formInput.dataset.max) {
 
                 document.querySelector(".form-element-counter").innerHTML = "Has llegado al Límite de " + formInput.dataset.max + " Caracteres";
 
-                //alert ("Has llegado al Límite de " + formInput.dataset.max + " Caracteres")
-                //formInput.closest('.form-element').querySelector('.validate-characters span').write("Has llegado al Límite de " + formInput.dataset.max + " Caracteres").
+                formInput.closest('.form-element').querySelector('.form-element-counter span').write("Has llegado al Límite de " + formInput.dataset.max + " Caracteres").
+                
             } else {
 
                 let remainingCharacters = formInput.dataset.max - arrayString.value.length

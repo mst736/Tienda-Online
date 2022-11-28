@@ -139,7 +139,7 @@
     
                     <div class="column">
                         <div class="contact-form">
-                            <form action="action_page.php">
+                            <form >
                                 <div class="two-columns">
                                     <div class="column">
 
@@ -153,7 +153,7 @@
 
                                             <div class="form-element-input">
 
-                                                <input type="text" id="fname" name="firstname" placeholder="Introduce your Name" required>
+                                                <input data-validate="only-letters" type="text" id="fname" name="firstname" placeholder="Introduce your Name" required>
 
                                             </div>
 
@@ -173,7 +173,7 @@
 
                                             <div class="form-element-input">
 
-                                                <input type="text" id="lname" name="lastname" placeholder="Introduce your Last Name">
+                                                <input data-validate="only-letters" type="text" id="lname" name="lastname" placeholder="Introduce your Last Name" required>
 
                                             </div>
 
@@ -189,7 +189,7 @@
                                                 <label for="telephone">Telephone</label>
                                             </div>
                                             <div class="form-element-input">
-                                                <input type="tel" id="telephone" name="telephone" placeholder="Introduce your Telephone">
+                                                <input data-validate="telephone only-numbers" type="tel" id="telephone" name="telephone" placeholder="Introduce your Telephone">
                                             </div>
                                         </div>
                                     </div>
@@ -199,7 +199,7 @@
                                                 <label for="email">Email</label>
                                             </div>
                                             <div class="form-element-input">
-                                                <input type="email" id="email" name="email" placeholder="Introduce your email">
+                                                <input data-validate="email" type="email" id="email" name="email" placeholder="Introduce your email" required>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +218,7 @@
 
                                             <div class="form-element-input">
 
-                                                <textarea name="message" class="validate-characters" data-max="250" maxlength="250" placeholder="Write your Message"></textarea>
+                                                <textarea name="message" class="validate-characters" data-max="10" maxlength="10" placeholder="Write your Message" required></textarea>
 
                                             </div>
 
@@ -245,7 +245,7 @@
 
                                     <div class="reset-button">
 
-                                        <button class="custom-button" >Reset Form</button><!--BOTÓN RESTABLECER DATOS FORMULARIO DE CONTACTO-->
+                                        <button class="custom-button">Reset Form</button><!--BOTÓN RESTABLECER DATOS FORMULARIO DE CONTACTO-->
 
                                     </div>
 

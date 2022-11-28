@@ -1,18 +1,14 @@
+//import { validateForm } from "./validateForm.js";
+
 export let formsubmittion = () => {
     
-    let formsubmittion = document.querySelector('.form-reset-button .form-button button');
-    let fieldRequired = document.querySelector('.form-element-input input');
-   
+    let formsubmittion = document.querySelector('.form-button .custom-button');
+
     formsubmittion.addEventListener("click", (event) => {
 
-        if (fieldRequired.required) {
+        //validateForm(true);
 
-            
-
-
-        }
-        
-        //event.preventDefault();
+        alert ("envio correcto")
 
         //console.log("Evento Clic Botón Correcto")
 
