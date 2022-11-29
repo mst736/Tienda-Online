@@ -1,4 +1,3 @@
-import {form} from './form.js';
 
 export let renderNotification = () => {
 

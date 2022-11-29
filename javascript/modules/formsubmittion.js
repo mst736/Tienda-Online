@@ -1,22 +1,19 @@
-import { validateForm } from "./validateForm.js";
-import { renderNotification } from "./notification.js";
+import {validateForm} from './validateForm.js';
 
 export let formsubmittion = () => {
     
     let formsubmittion = document.querySelector('.form-button button');
 
-    formsubmittion.addEventListener("click", () => {
+    formsubmittion.addEventListener("click", () => {        
 
         if (validateForm()) {
 
-            return renderNotification();
-            
+            return true;
+
         } else {
 
-            return renderNotification()= false;
-
+            return false;
         }
-        
 
     });
 

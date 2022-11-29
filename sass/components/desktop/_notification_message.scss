@@ -1,7 +1,5 @@
 
-.notification_message {
-
-    .valid {
+     .success{
         background-color: green;
         border: 0.25rem solid;
         bottom: -7rem;
@@ -14,7 +12,7 @@
         width:45%
     }
 
-    .invalid {
+    .error {
         
         background-color: rgb(253, 16, 16);
         border: 0.25rem solid;
@@ -28,5 +26,5 @@
         width:45%
         
      }
+
     
-}
