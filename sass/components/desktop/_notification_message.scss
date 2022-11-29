@@ -2,19 +2,30 @@
 .notification_message {
 
     .valid {
-        bottom: -5rem;
-        position: absolute;
         background-color: green;
-    
+        border: 0.25rem solid;
+        bottom: -7rem;
+        display: flex;
+        font-weight: 600;
+        height: fit-content;
+        justify-content: center;
+        padding: 1rem 0rem;
+        position: absolute;
+        width:45%
     }
 
     .invalid {
         
-        bottom: -5rem;
-        // position: absolute;
-
-        position: fixed;
-        background-color: red;
+        background-color: rgb(253, 16, 16);
+        border: 0.25rem solid;
+        bottom: -7rem;
+        display: flex;
+        font-weight: 600;
+        height: fit-content;
+        justify-content: center;
+        padding: 1rem 0rem;
+        position: absolute;
+        width:45%
         
      }
     
