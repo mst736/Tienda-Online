@@ -2,7 +2,7 @@
 export let tabs = () => {
 
     let tabItems = document.querySelectorAll('.tab-item');
-    
+    console.log (tabItems);
     let tabContents = document.querySelectorAll('.tab-content');
 
 
@@ -15,9 +15,19 @@ export let tabs = () => {
 
             // CON UN BUCLE, SE REMUEVEN PRIMERO TODAS LAS CLASES ACTIVAS DEL ELEMENTO ANTES DE ACTIVAR EL ELEMENTO DONDE HAYAS CLICADO
 
+            
             tabItems.forEach(tabsItem => {
 
-                tabsItem.classList.add("active");
+                if (tabsItem) {
+
+                    tabsItem.classList.remove("active");
+                    
+                } else {
+
+                    return false;
+
+                }
+                
 
             });
 
@@ -30,7 +40,7 @@ export let tabs = () => {
             tabContents.forEach(tabContent => {
 
 
-                // SI EL DATASET DE "tabItem" Y DE "tabContent" SE ACTIVA LAS CLASES DE ESOS DOS ELEMENTOS, SINO SE REMUEVE LA CLASE.
+                // SI EL DATASET DE "tabItem" Y DE "tabContent" SON IGUALES, SE ACTIVA LAS CLASES DE ESOS DOS ELEMENTOS, SINO SE REMUEVE LA CLASE.
 
                 if(tabContent.dataset.tab == tabItem.dataset.tab) {
 

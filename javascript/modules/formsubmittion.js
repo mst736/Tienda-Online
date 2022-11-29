@@ -1,47 +1,49 @@
-//import { validateForm } from "./validateForm.js";
+import { validateForm } from "./validateForm.js";
 
 export let formsubmittion = () => {
     
-    let formsubmittion = document.querySelector('.form-button .custom-button');
+    let formsubmittion = document.querySelector('.form-button button');
 
-    formsubmittion.addEventListener("click", (event) => {
+    formsubmittion.addEventListener("click", () => {
 
-        //validateForm(true);
+        if (validateForm()) {
 
-        alert ("envio correcto")
-
-        //console.log("Evento Clic Botón Correcto")
-
-        // let arrayString = formInput.closest('.form-element').querySelector('.validate-characters');
-
-        //     //console.log(formInput.dataset.max);
-
-        // if (arrayString.value.length == formInput.dataset.max) {
-
-        //     document.querySelector(".form-element-counter").innerHTML = "Has llegado al Límite de " + formInput.dataset.max + " Caracteres";
-
-        //     //alert ("Has llegado al Límite de " + formInput.dataset.max + " Caracteres")
-        //     //formInput.closest('.form-element').querySelector('.validate-characters span').write("Has llegado al Límite de " + formInput.dataset.max + " Caracteres").
-        // } else {
-
-        //     let remainingCharacters = formInput.dataset.max - arrayString.value.length
+            alert("Formulario Enviado")
             
-        //     if (remainingCharacters > 1) {
+        } else {
 
-        //         document.querySelector(".form-element-counter").innerHTML = ("Te quedan " + remainingCharacters + " caracteres")
+            //alert("Formulario No Enviado")
 
-        //     } else {
+            //    let unsuccessfull = document.getElementById("#notification_message").appendChild(document.createElement('p').textContent = ("FORM NOT SENT"))
 
-        //         document.querySelector(".form-element-counter").innerHTML = ("Te queda " + remainingCharacters + " caracter")
+            //     console.log(unsuccessfull);
 
+            // ✅ Create element
+            const el = document.createElement('p');
 
-        //     }
+            // ✅ Add classes to element
+            el.classList.add('invalid');
 
-        // }
+            // ✅ Add text content to element
+            el.textContent = 'FORM NOT SENT';
 
+            // ✅ Or set the innerHTML of the element
+            // el.innerHTML = `<span>One, two, three</span>`;
 
-    
+            // ✅ add element to DOM
+            const box = document.getElementById('notification_message');
+
+            box.appendChild(el);
+
+            setTimeout(() => {
+
+                notification.classList.remove("invalid");
+                
+            }, 5000);
+
+        }
         
+
     });
 
 }

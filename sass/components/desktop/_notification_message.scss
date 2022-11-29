@@ -1,0 +1,21 @@
+
+.notification_message {
+
+    .valid {
+        bottom: -5rem;
+        position: absolute;
+        background-color: green;
+    
+    }
+
+    .invalid {
+        
+        bottom: -5rem;
+        // position: absolute;
+
+        position: fixed;
+        background-color: red;
+        
+     }
+    
+}

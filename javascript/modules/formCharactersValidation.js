@@ -1,19 +1,20 @@
 export let formCharactersValidation = () => {
 
     let formInputs = document.querySelectorAll('.validate-characters');
-   
+    
+
     formInputs.forEach(formInput => {
 
         formInput.addEventListener("input", () => {
-            
+
             let arrayString = formInput.closest('.form-element').querySelector('.validate-characters');
 
 
             if (arrayString.value.length == formInput.dataset.max) {
 
-                document.querySelector(".form-element-counter").innerHTML = "Has llegado al Límite de " + formInput.dataset.max + " Caracteres";
+                document.querySelector(".form-element-counter").innerHTML = "You Reached the Limit of " + formInput.dataset.max + " Characters";
 
-                formInput.closest('.form-element').querySelector('.form-element-counter span').write("Has llegado al Límite de " + formInput.dataset.max + " Caracteres").
+                formInput.closest('.form-element').querySelector('.form-element-counter span').write("Has llegado al Límite de " + formInput.dataset.max + " Caracteres")
                 
             } else {
 
@@ -21,11 +22,11 @@ export let formCharactersValidation = () => {
                 
                 if (remainingCharacters > 1) {
 
-                    document.querySelector(".form-element-counter").innerHTML = ("Te quedan " + remainingCharacters + " caracteres")
+                    document.querySelector(".form-element-counter span").innerHTML = ("You have " + remainingCharacters + " characters left")
 
                 } else {
 
-                    document.querySelector(".form-element-counter").innerHTML = ("Te queda " + remainingCharacters + " caracter")
+                    document.querySelector(".form-element-counter").innerHTML = ("You have " + remainingCharacters + " caracters left")
 
 
                 }
