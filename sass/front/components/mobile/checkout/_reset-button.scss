@@ -1,0 +1,16 @@
+// BOTÓN RESET DATOS DE LA PARTE INFERIOR DEL FORMULARIO
+
+.reset-button{
+    width: 35%;
+
+    .reset-button input{
+        background-image: $reset-button-input-background-image-gradient;
+        border: 0.3rem solid $reset-button-input-background-border-color;
+        border-radius: 15%;
+        font-size: 1.5rem;
+        height: 4vh;
+        width: 100%;
+    }
+    
+}
+

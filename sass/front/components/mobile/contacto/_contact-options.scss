@@ -1,0 +1,38 @@
+// LISTADO UL DONDE ENUMERAMOS LAS DIFERENTES VÍAS DE CONTACTO CON LA EMPRESA
+
+.contact-options{
+
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    .contact-options ul{
+
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        height: 100%;
+
+        .contact-options ul svg{
+
+            height: 3rem;
+            width: 3rem;
+    
+        }
+        .contact-options ul path{
+    
+            fill: $contact-options-ul-path-fill;
+            
+        }
+        
+        .contact-options ul li span{
+        
+            font-size: 2.5rem;
+            margin-left: 3rem;
+        
+        }
+    
+
+    }
+    
+}

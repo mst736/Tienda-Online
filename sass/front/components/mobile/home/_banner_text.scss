@@ -1,0 +1,38 @@
+
+//SECCIÓN TEXTO IZQUIERDA Y BANNER IMAGEN DERECHA ANTES DEL FOOTER
+
+.banner-text{
+
+    margin: 2rem 0 0rem 0;
+    padding: 2rem 5%;
+    width: 90%;
+
+    .banner-text-description{
+
+        .banner-text-description p{
+
+            font-size: 1.75rem;
+        
+        }
+    
+
+    }
+    
+    
+    .banner-text-image{
+        
+        margin: 0 auto;
+        height: 36vh;
+        width:50%;
+
+        .banner-text-image img{
+
+            border-style: solid;
+            height: 100%;
+        }
+    
+    }
+    
+    
+}
+

@@ -1,0 +1,83 @@
+// SECCIÓN SERVICIOS DESTACADOS HOME
+
+.featured-services{
+
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 1rem;
+
+    .featured-services-title{
+
+        margin: 2rem 0;
+    
+        .featured-services-title h2{
+            text-align: center;
+        }
+        .featured-services-title p{
+            text-align: right;
+        }
+        
+    }
+    
+    // SERVICIO DESTACADO
+
+    .featured-services-gallery-item{
+
+        background-color: $featured-services-gallery-item-background-color;
+        border-color: $featured-services-gallery-item-border-color;
+        border-radius: 2rem;
+        border-style: solid;
+        box-shadow: 1px 10px 50px $featured-services-gallery-item-box-shadow-color;
+        display: grid;
+        overflow: hidden;
+        height: 75vh;
+    
+        .featured-services-gallery-item-image{
+
+            margin-bottom: 1rem;
+        }
+        
+        .featured-services-gallery-item-call-to-action{
+
+            margin: 1rem 0rem;
+    
+            .featured-services-gallery-item-call-to-action h3{
+        
+                font-size: 2rem;
+            }
+        
+        
+        }
+        
+        .featured-services-gallery-item-category{  
+
+            margin: 1rem 0rem;
+    
+            .featured-services-gallery-item-category h4{  
+
+                font-size: 1.75rem;
+                color: $featured-services-gallery-item-category-h4-color;
+            
+            }
+        }
+        
+        
+        
+        .featured-services-gallery-item-description{
+
+            margin-top: 1rem;
+    
+            .featured-services-gallery-item-description p{
+        
+                font-size: 1.6rem;
+            } 
+        
+        }
+    
+    }
+    
+}
+
+
+  
+

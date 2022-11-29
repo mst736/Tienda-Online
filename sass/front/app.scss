@@ -1,13 +1,13 @@
 @charset "utf-8";
-@import "helpers/_variables";
-@import "helpers/_mixins";
-@import "base/_normalize";
-@import "base/_contents";
-@import "base/_typography";
-@import "layout/desktop/_master";
-@import "layout/desktop/_header";
-@import "layout/desktop/_footer";
-@import "layout/desktop/_columns";
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "base/_normalize.scss";
+@import "base/_contents.scss";
+@import "base/_typography.scss";
+@import "layout/desktop/_master.scss";
+@import "layout/desktop/_header.scss";
+@import "layout/desktop/_footer.scss";
+@import "layout/desktop/_columns.scss";
 @import "components/desktop/carrito_compra/_product-quantity-selector.scss";
 @import "components/desktop/carrito_compra/_shopping-cart-checkout-summary.scss";
 @import "components/desktop/carrito_compra/_shopping-cart-resume-buttons .one-column.scss";
@@ -37,6 +37,7 @@
 @import "components/desktop/productos/_products.scss";
 @import "components/desktop/_tabs.scss";
 @import "components/desktop/_notification_message.scss";
+
 
 
 

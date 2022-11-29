@@ -1,0 +1,27 @@
+//BOTONES CONFIRMACIÓN DE COMPRA DEBAJO DE LA TABLA RESUMEN DE COMPRA
+
+.shopping-cart-resume-buttons .one-column{
+
+    display: flex;
+    justify-content: end;
+    
+    .shopping-cart-resume-buttons .one-column .column{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 35%;
+
+        .shopping-cart-resume-button{
+            
+            width: max-content;
+        }
+    
+    
+    }
+    
+    
+    
+
+}
+

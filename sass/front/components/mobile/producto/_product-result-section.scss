@@ -1,0 +1,45 @@
+//SECCIÓN PRODUCT RESULT DONDE SE MOSTRARÁ EL TÍTULO, PRECIO, DESCRIPCIÓN Y TEXTO "BOOKING DAYS"
+
+.product-result{
+
+    width: 100%;
+
+    .product-result-title{
+
+        margin-bottom: 3rem;
+
+    }
+    
+    .product-result-price{
+    
+        margin-bottom: 3rem;
+
+    }
+    
+    .product-result-description{
+    
+        margin-bottom: 6rem;
+        
+    }
+    
+    .product-result-quantity{  
+
+        margin: 0rem 0rem 6rem 0rem;    
+        display: flex;
+
+        .product-result-quantity-text{
+
+            margin: 0rem 4rem 0rem 0rem;
+
+        }
+        
+        .product-result-add-to-cart-button{
+
+            width: max-content;
+
+        }
+    
+    }
+    
+    
+}

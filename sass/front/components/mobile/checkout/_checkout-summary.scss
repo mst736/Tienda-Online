@@ -1,0 +1,36 @@
+//TABLA RESUMEN DATOS DE COMPRA IMPORTE SIN IVA, IVA, TRANSPORTE, ETC.
+
+.checkout-summary{
+
+    border-color: $checkout-summary-border-color;
+    border-style: solid;
+
+
+    .checkout-summary .summary-title{
+    
+        background-color: $checkout-summary-background-color;
+        padding: 0.5rem 0;
+        text-align: center;
+
+    }
+
+    .checkout-summary table{
+
+        width: 100%;
+
+        .checkout-summary table td{
+    
+            font-size: 2.25rem;
+            padding: 1rem 0;
+            text-align: center;
+            width: 50%;
+            
+        }
+    
+    }
+    
+    
+    
+    
+}
+

@@ -1,0 +1,310 @@
+@mixin borderColor($i) {
+
+    $bt: 0.1rem;
+    $bs: $bt * 2;
+    $colors: $secondary-color-dark, $secondary-color, $secondary-color-dark;
+    border: $bt solid nth($colors, $i);
+    background: lighten(nth($colors, $i), 10%);
+    box-shadow: 0 0 $bs $bs/2 nth($colors, $i) inset,
+                0 0 $bs $bs/2 nth($colors, $i);
+}
+
+@mixin gradientColor($direction, $color, $color-highlight){
+    background: $color; /* Old browsers */
+    background: -moz-linear-gradient(to $direction, $color-highlight 0%, $color 100%); 
+    background: -webkit-linear-gradient(to $direction, $color-highlight 0%, $color 100%); 
+    background: linear-gradient(to $direction, $color-highlight 0%, $color 100%);
+}
+
+@mixin respond-to($breakpoint) {
+    
+    @if $breakpoint == "xs" {
+        @media (max-width:370px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (min-width:767px) and (max-width:1280px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == "wsga" {
+        @media (min-width:1281px) and (max-width: 1920px){
+        @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media (min-width: 1920px) {
+        @content;
+        }
+    }
+}
+
+@mixin fadeIn($delay,$duration) {
+
+    display: initial;
+    visibility: visible;
+    opacity: 1;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+
+    @keyframes fadeIn {
+        0% {opacity: 0; }
+        100% {opacity: 1; }
+    } 
+}
+
+@mixin fadeOut($delay,$duration) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-fill-mode: forwards;
+    animation-name: fadeOut;
+
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    } 
+}
+
+@mixin translateXOutScreen($delay,$duration){
+    
+    animation-name: translateXOutScreen;
+    animation-duration:  $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+
+    @keyframes translateXOutScreen {
+        0%  {transform: translateX(0);} 
+        100% {transform: translateX(-150%);}
+    }
+}
+
+@mixin translateXInScreen($delay,$duration){
+    
+    animation-name: translateXOutScreen;
+    animation-duration:  $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+
+    @keyframes translateXOutScreen {
+        0%  {transform: translateX(150%);} 
+        100% {transform: translateX(0%);}
+    }
+}   
+
+@mixin translateYInScreen($delay,$duration){
+    
+    animation-name: translateYInScreen;
+    animation-duration:  $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+
+    @keyframes translateYInScreen {
+        0%  {transform: translateY(-150%);} 
+        100% {transform: translateY(0%);}
+    }
+}   
+
+@mixin translateYOutScreen($delay,$duration){
+    
+    animation-name: translateYOutScreen;
+    animation-duration:  $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+
+    @keyframes translateYOutScreen {
+        0%  {transform: translateY(0%);} 
+        100% {transform: translateY(-150%);}
+    }
+} 
+
+@mixin bounceX($duration, $iteration){
+
+    animation-name: bounce;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+
+    @keyframes bounce {
+        0%  {transform: translateX(0);} 
+        20% {transform: translateX(0);}         
+        40% {transform: translateX(-30px);}
+        50% {transform: translateX(0);}
+        60% {transform: translateX(-15px);} 
+        80% {transform: translateX(0);} 
+        100% {transform: translateX(0);}
+    }
+}
+
+@mixin bounceY($duration, $iteration){
+
+    animation-name: bounce;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+
+    @keyframes bounce {
+        0%  {transform: translateY(0);} 
+        50% {transform: translateY(-45px);}
+        100% {transform: translateY(0);}
+    }
+}
+
+@mixin rotate($class, $width, $width-sm) {
+    
+    .#{$class}.is-switched .is-visible {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-animation: rotate 0.5s;
+        -moz-animation: rotate 0.5s;
+        animation: rotate 0.5s;
+    }
+    
+    .#{$class}.is-switched .is-hidden {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        transform: rotateY(0);
+        -webkit-animation: rotate-inverse 0.5s;
+        -moz-animation: rotate-inverse 0.5s;
+        animation: rotate-inverse 0.5s;
+        opacity: 0;
+    }
+    
+    .#{$class}.is-switched .is-selected {
+        opacity: 1;
+    }
+    
+    .#{$class} > div {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        outline: 1px solid transparent;
+    }
+    
+    .#{$class} .is-visible {
+        position: relative;
+        z-index: 5;
+    }
+    
+    .#{$class} .is-hidden {
+        position: absolute;
+        top: 0;
+        width: $width;
+        z-index: 1;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+
+        @include respond-to('sm'){
+            width: $width-sm;
+        }
+    }
+
+    @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: perspective(2000px) rotateY(0);
+        }
+        70% {
+          -webkit-transform: perspective(2000px) rotateY(200deg);
+        }
+        100% {
+          -webkit-transform: perspective(2000px) rotateY(180deg);
+        }
+    }
+      
+    @-moz-keyframes rotate {
+        0% {
+          -moz-transform: perspective(2000px) rotateY(0);
+        }
+        70% {
+          -moz-transform: perspective(2000px) rotateY(200deg);
+        }
+        100% {
+          -moz-transform: perspective(2000px) rotateY(180deg);
+        }
+    }
+      
+    @keyframes rotate {
+        0% {
+          -webkit-transform: perspective(2000px) rotateY(0);
+          -moz-transform: perspective(2000px) rotateY(0);
+          -ms-transform: perspective(2000px) rotateY(0);
+          -o-transform: perspective(2000px) rotateY(0);
+          transform: perspective(2000px) rotateY(0);
+        }
+        70% {
+          -webkit-transform: perspective(2000px) rotateY(200deg);
+          -moz-transform: perspective(2000px) rotateY(200deg);
+          -ms-transform: perspective(2000px) rotateY(200deg);
+          -o-transform: perspective(2000px) rotateY(200deg);
+          transform: perspective(2000px) rotateY(200deg);
+        }
+        100% {
+          -webkit-transform: perspective(2000px) rotateY(180deg);
+          -moz-transform: perspective(2000px) rotateY(180deg);
+          -ms-transform: perspective(2000px) rotateY(180deg);
+          -o-transform: perspective(2000px) rotateY(180deg);
+          transform: perspective(2000px) rotateY(180deg);
+        }
+    }
+      
+    @-webkit-keyframes rotate-inverse {
+        0% {
+          -webkit-transform: perspective(2000px) rotateY(-180deg);
+        }
+        70% {
+          -webkit-transform: perspective(2000px) rotateY(20deg);
+        }
+        100% {
+          -webkit-transform: perspective(2000px) rotateY(0);
+        }
+    }
+      
+    @-moz-keyframes rotate-inverse {
+        0% {
+          -moz-transform: perspective(2000px) rotateY(-180deg);
+        }
+        70% {
+          -moz-transform: perspective(2000px) rotateY(20deg);
+        }
+        100% {
+          -moz-transform: perspective(2000px) rotateY(0);
+        }
+    }
+      
+    @keyframes rotate-inverse {
+        0% {
+          -webkit-transform: perspective(2000px) rotateY(-180deg);
+          -moz-transform: perspective(2000px) rotateY(-180deg);
+          -ms-transform: perspective(2000px) rotateY(-180deg);
+          -o-transform: perspective(2000px) rotateY(-180deg);
+          transform: perspective(2000px) rotateY(-180deg);
+        }
+        70% {
+          -webkit-transform: perspective(2000px) rotateY(20deg);
+          -moz-transform: perspective(2000px) rotateY(20deg);
+          -ms-transform: perspective(2000px) rotateY(20deg);
+          -o-transform: perspective(2000px) rotateY(20deg);
+          transform: perspective(2000px) rotateY(20deg);
+        }
+        100% {
+          -webkit-transform: perspective(2000px) rotateY(0);
+          -moz-transform: perspective(2000px) rotateY(0);
+          -ms-transform: perspective(2000px) rotateY(0);
+          -o-transform: perspective(2000px) rotateY(0);
+          transform: perspective(2000px) rotateY(0);
+        }
+    }
+}
