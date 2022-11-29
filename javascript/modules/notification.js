@@ -13,6 +13,6 @@ export let renderNotification = () => {
         setTimeout(() => {
             notification.classList.remove("active");
             notification.classList.remove(event.detail.type);
-        }, 5000);
+        }, 3800);
     }));
 }

@@ -770,7 +770,6 @@ footer .footer-element p {
 .contact-form {
   align-items: center;
   display: flex;
-  position: relative;
   justify-content: center;
   min-height: 40vh;
 }
@@ -1060,29 +1059,36 @@ footer .footer-element p {
   display: block;
 }
 
-.notification_message .valid {
-  background-color: green;
-  border: 0.25rem solid;
-  bottom: -7rem;
-  display: flex;
-  font-weight: 600;
-  height: fit-content;
-  justify-content: center;
-  padding: 1rem 0rem;
-  position: absolute;
-  width: 45%;
+#notification {
+  border: 0.5rem white solid;
+  bottom: 5vh;
+  min-height: 2rem;
+  opacity: 0;
+  padding: 2rem;
+  position: fixed;
+  right: 5%;
+  transition: opacity 0.5s;
+  text-align: center;
+  width: 20%;
+  z-index: -1;
 }
-.notification_message .invalid {
-  background-color: rgb(253, 16, 16);
-  border: 0.25rem solid;
-  bottom: -7rem;
-  display: flex;
-  font-weight: 600;
-  height: fit-content;
-  justify-content: center;
-  padding: 1rem 0rem;
-  position: absolute;
-  width: 45%;
+
+#notification.active {
+  opacity: 1;
+  z-index: 5000;
+}
+
+#notification.success {
+  background-color: hsl(120deg, 100%, 25%);
+}
+
+#notification.error {
+  background-color: hsl(0deg, 100%, 50%);
+}
+
+#notification span {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=app.css.map */
