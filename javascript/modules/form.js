@@ -1,25 +1,36 @@
-import {formsubmittion} from './formsubmittion.js';
+import {validateForm} from './validateForm.js';
 
 export let form = () => {
 
-    if(formsubmittion()) {
-        // Podemos crear un evento personalizado con dispatchEvent y new CustomEvent que podrá ser escuchado 
-        // por otros archivos js y utilizarlo para enviarles datos. 
-        // En este caso, el evento se llamará "message" y enviará dos parámetros: "text" y "type".
-        document.dispatchEvent(new CustomEvent('message', {
-            detail: {
-                text: 'Formulario enviado correctamente',
-                type: 'success'
-            }
-        }));
+    let form = document.querySelector('form');
+    let formInputs = form.elements;
+    let formsubmittion = document.querySelector('.form-send-button');
 
-    } else {
-        document.dispatchEvent(new CustomEvent('message', {
-            detail: {
-                text: 'Por favor, rellene el formulario',
-                type: 'error'
-            }
-        }));
+    if(formsubmittion){
+
+        formsubmittion.addEventListener("click", event => {        
+
+            event.preventDefault();
+    
+            if (!validateForm(formInputs)) {
+    
+                document.dispatchEvent(new CustomEvent('message', {
+                    detail: {
+                        text: 'Por favor, rellene el formulario',
+                        type: 'error'
+                    }
+                }));
+    
+                return;
+            } 
+    
+            document.dispatchEvent(new CustomEvent('message', {
+                detail: {
+                    text: 'Formulario enviado correctamente',
+                    type: 'success'
+                }
+            }));
+        });
     }
-
+    
 }

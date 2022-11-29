@@ -1,6 +1,4 @@
-export let validateForm = () => {
-
-    let formInputs = document.querySelectorAll('.form-element-input input');
+export let validateForm = formInputs => {
 
     let validForm = true;
    

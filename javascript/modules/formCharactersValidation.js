@@ -2,7 +2,6 @@ export let formCharactersValidation = () => {
 
     let formInputs = document.querySelectorAll('.validate-characters');
     
-
     formInputs.forEach(formInput => {
 
         formInput.addEventListener("input", () => {

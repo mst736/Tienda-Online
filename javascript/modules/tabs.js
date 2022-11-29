@@ -2,7 +2,6 @@
 export let tabs = () => {
 
     let tabItems = document.querySelectorAll('.tab-item');
-    console.log (tabItems);
     let tabContents = document.querySelectorAll('.tab-content');
 
 
