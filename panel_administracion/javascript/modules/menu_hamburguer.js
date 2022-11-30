@@ -1,11 +1,11 @@
-export let menu_hamburguer = () => {
+// export let menu_hamburguer = () => {
 
-  $(document).ready(function(){
+//   $(document).ready(function(){
     
-      $('.menu .btn').on('click', function() {
-        $('#nav').toggleClass('menu_show');
-      });    
+//       $('.menu .btn').on('click', function() {
+//         $('#nav').toggleClass('menu_show');
+//       });    
       
-    });
+//     });
 
-}
+// }

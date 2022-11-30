@@ -1,9 +1,17 @@
-footer{
+
+footer {
+
+    height: 10%;
+    width: 100%;
+}
+
+.footer {
+
     align-items: center;
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
-    height: 8vh;
+    height: 100%;
     justify-content: center;
     margin-top: auto; 
     width: 100%;

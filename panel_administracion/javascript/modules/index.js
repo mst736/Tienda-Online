@@ -1,4 +1,4 @@
-import {menu_hamburguer} from './menu_hamburguer.js';
+import {tabs} from './tabs.js';
 
 
-menu_hamburguer();
+tabs();

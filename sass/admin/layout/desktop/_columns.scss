@@ -1,4 +1,5 @@
 .five-columns{
+
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -40,20 +41,25 @@
 }
 
 .two-columns-aside{
+
     display: flex;
+    height: 100%;
     justify-content: space-between;
-    width: 100%;
+    padding: 0rem 5%;
+    width: 90%;
 
     & > .column-aside{
-        width: 20%;
+        width: 25%;
     }
 
     & > .column-main{
-        width: 75%;
+
+        width: 70%;
     }
 }
 
 .one-column{
+
     width: 100%;
 
     & > .column{
@@ -62,3 +68,4 @@
         width: 100%;
     }
 }
+

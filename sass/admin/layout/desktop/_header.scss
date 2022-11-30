@@ -1,15 +1,20 @@
+
+header {
+
+    height: 10%;
+    width: 100%;
+}
+
 .header{
 
     align-items: center;
     background-color: $primary-color;
-    box-shadow: 10px -5px 48px 3px $header-box-shadow-color;
-    border: 5px solid;
     color: $header-text-color;
     display: flex;
     padding: 0 5%;
+    height: 100%;
     justify-content: space-between;
-    min-height: 10vh;
-    width: 100%;
+    width: 90%;
 
     .header-logo{
 
