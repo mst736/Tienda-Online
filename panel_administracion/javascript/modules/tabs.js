@@ -1,91 +1,45 @@
 
 export let tabs = () => {
-
-    let tabItems = document.querySelectorAll('.tab-item');
-    let tabContents = document.querySelectorAll('.tab-content');
-
-
-    //EVENTO ON LOAD PARA ACTIVAR LA PRIMERA TAB AL CARGAR LA PAGINA
-
-    // tabItems.forEach(tabItem => {
-
-    //     tabItem.addEventListener("load", () => {
-
-    //         tabContents.forEach(tabContent => {
-
-            
-    //             if (tabItem.dataset.tab[0] & tabContent.dataset.tab[0]) {
-
-    //                 tabItem.classList.add("active");
-    //                 tabContent.classList.add("active");
-
-    //             } else {
-
-    //                 return false;
-    //             }
-
-    //         });
-
-
-    //     });
-
-    // });
-
-    // RECORREMOS PRIMERO LOS ELEMENTOS ITEMS ASOCIADOS AL CONTENT CORRESPONDIENTE
-
-    tabItems.forEach(tabItem => {
-        
-        // AÑADIMOS EL EVENTLISTENER "CLICK" PARA ESPERAR EL CLIC DE USUARIO
-        tabItem.addEventListener("click", () => {
-
-            // CON UN BUCLE, SE REMUEVEN PRIMERO TODAS LAS CLASES ACTIVAS DEL ELEMENTO ANTES DE ACTIVAR EL ELEMENTO DONDE HAYAS CLICADO
-
-            
-            tabItems.forEach(tabsItem => {
-
-                if (tabsItem) {
-
-                    tabsItem.classList.remove("active");
-                    
-                } else {
-
-                    return false;
-
-                }
-                
-
-            });
-
-            
-            // SE APLICA EL ATRIBUTO ACTIVE A LA CLASE DEL ELEMENTO "tabItem"
-
-            tabItem.classList.add("active");
-
-            tabContents.forEach(tabContent => {
-
-
-                // SI EL DATASET DE "tabItem" Y DE "tabContent" SON IGUALES, SE ACTIVA LAS CLASES DE ESOS DOS ELEMENTOS, SINO SE REMUEVE LA CLASE.
-
-                if(tabContent.dataset.tab == tabItem.dataset.tab) {
-
-            //         // SE AÑADE LA CLASE ACTIVA
-
-                    tabContent.classList.add("active");
-
-                } else {
-
-            //         // SE REMUEVE LA CLASE ACTIVA
-
-                    tabContent.classList.remove("active");
-
-                }
     
-            });
-    
+        // Seleccionamos todos los botones de las pestañas
+
+        var tabButtons = document.querySelectorAll(".tab-button");
+
+    // Asignamos un manejador de eventos al clic en cada botón de pestaña
+    tabButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            // Cuando se hace clic en un botón, se obtiene el contenido de la pestaña
+            // correspondiente
+            var tabContent = document.querySelector(this.dataset.target);
+
+            // Si el contenido de la pestaña existe, se muestra y se ocultan
+            // los demás contenidos de pestañas
+            if (tabContent) {
+
+                var parentTabs = this.closest(".tabs");
+                var tabContents = parentTabs.querySelectorAll(".tab-content");
+
+                tabContents.forEach(function(content) {
+                    content.classList.remove("active");
+                });
+
+                tabContent.classList.add("active");
+
+                // Luego, se ocultan todos los botones de pestañas
+                // y se muestra el botón correspondiente
+                var tabButtons = parentTabs.querySelectorAll(".tab-button");
+
+                tabButtons.forEach(function(button) {
+                    button.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+                if(tabContent.querySelector('.tab-button')){
+                    tabContent.querySelector('.tab-button').classList.add('active');
+                    document.querySelector(tabContent.querySelector('.tab-button').dataset.target).classList.add('active');
+                }
+            }
         });
-
     });
-
-    
-
 }

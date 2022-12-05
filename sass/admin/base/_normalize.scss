@@ -372,6 +372,7 @@ th {
 /* List
 ==============================================================================*/
 ol, ul {
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin: 0;
