@@ -4,9 +4,12 @@
     margin-top: 1rem;
 }
 .tabs-header {
+
+    background-color: hsla(0, 2%, 53%, 0.438);
     display: flex;
     flex-direction: row;
     gap:.3rem;
+    min-height: 4vh;
 }
 .tab-button {
     flex: 1;

@@ -1,0 +1,88 @@
+.form-element-input{
+    width: 100%;
+
+    select, input{
+
+        border: none;
+        border-bottom: 0.1rem solid;
+        width: 100%;
+
+    }
+}
+
+.save-button, .remove-button {
+
+
+    cursor: pointer;
+    
+    width: 5%;
+
+
+}
+
+.on-off-button  {
+
+    align-items: center;
+    background-color: white;
+    border: 0.1rem solid;
+    border-radius: 5px;
+    display: flex;
+    margin: 0.5rem 1rem 0.6rem 0rem;
+    padding: 0.25rem;
+    width: 10%;
+
+}
+
+
+
+.on-switch-left-button  {
+
+    color: hsl(194, 89%, 52%);
+    cursor: pointer;
+    width: 50%;
+
+    // &.active {
+
+        background-color: red;
+
+        span {
+
+            display: none;
+
+        }
+    // }
+
+}
+
+
+
+.off-switch-right-button  {
+
+    background-color: hsl(194, 89%, 52%);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+
+    span {
+
+        display: none;
+    
+    }
+
+
+
+    &.active {
+
+
+
+        span {
+
+            color: hsl(0, 100%, 50%);
+        
+        }
+
+    }
+
+}
+
+
