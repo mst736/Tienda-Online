@@ -1,9 +1,9 @@
-// import {validateForm} from './validateForm.js';
+import {validateForm} from './validateForm.js';
 
 export let form = () => {
 
     let form = document.querySelector('form');
-    let formsubmittion = document.querySelector('.form-send-button');
+    let formsubmittion = document.querySelector('.form-send-button-iva');
 
     if(formsubmittion){
       
@@ -11,23 +11,24 @@ export let form = () => {
 
             event.preventDefault();
     
-            // if (!validateForm(form.elements)) {
+            if (!validateForm(form.elements)) {
     
-            //     document.dispatchEvent(new CustomEvent('message', {
-            //         detail: {
-            //             text: 'Por favor, rellene el formulario',
-            //             type: 'error'
-            //         }
-            //     }));
+                document.dispatchEvent(new CustomEvent('message', {
+                    detail: {
+                        text: 'Por favor, rellene el formulario',
+                        type: 'error'
+                    }
+                }));
     
-            //     return;
-            // } 
+                return;
+            } 
 
             let formData = new FormData(form);
-            let formDataJson = Object.fromEntries(formData.entries());
-            let url = form.dataset.url;
 
-            fetch(url, {
+            console.log(formData);
+            let formDataJson = Object.fromEntries(formData.entries());
+
+            fetch('http://192.168.1.16:8080/api/admin/taxes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

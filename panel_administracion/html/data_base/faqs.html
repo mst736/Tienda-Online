@@ -1,0 +1,224 @@
+<!--PÁGINA DE CONTACTE CON NOSOTROS-->
+
+<doctype html>
+
+    <html lang="es">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--esta linea hace que la pagina se pueda visualizar en cualquier pantalla (responsive)-->
+        <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico"> <!--favinicon es una imagenn enlazada que se mostrará en la pestaña de navegación-->
+
+        <title>Página Principal</title>
+        <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <meta name="keywords"    content="palabras clave, separadas, por comas">
+
+        <link href="/style/admin/app.css" rel="stylesheet"> <!--enlace interno al archivo style.css tipo de recurso a cargar etiqueta con autocierra -->
+
+    </head>
+    
+    
+    <body>
+        <header>
+            <div class="header"><!--DIV HEADER (TITULO Y MENÚS) -->
+                <div class="two-columns">
+
+                    <div class="column"><!--DIV TITULO (ICONO Y TÍTULO) -->
+
+                        <div class="header-logo">
+                            <div class="header-logo-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M16 1.2C15 1.2 14.2 2 14.2 3S15 4.8 16 4.8 17.8 4 17.8 3 17 1.2 16 1.2M12.4 4.1C11.93 4.1 11.5 4.29 11.2 4.6L7.5 8.29C7.19 8.6 7 9 7 9.5C7 10.13 7.33 10.66 7.85 10.97L11.2 13V18H13V11.5L10.75 9.85L13.07 7.5L14.8 10H19V8.2H15.8L13.86 4.93C13.57 4.43 13 4.1 12.4 4.1M10 3H3C2.45 3 2 2.55 2 2S2.45 1 3 1H12.79C12.58 1.34 12.41 1.71 12.32 2.11C11.46 2.13 10.65 2.45 10 3M5 12C2.24 12 0 14.24 0 17S2.24 22 5 22 10 19.76 10 17 7.76 12 5 12M5 20.5C3.07 20.5 1.5 18.93 1.5 17S3.07 13.5 5 13.5 8.5 15.07 8.5 17 6.93 20.5 5 20.5M19 12C16.24 12 14 14.24 14 17S16.24 22 19 22 24 19.76 24 17 21.76 12 19 12M19 20.5C17.07 20.5 15.5 18.93 15.5 17S17.07 13.5 19 13.5 22.5 15.07 22.5 17 20.93 20.5 19 20.5M5.32 11H1C.448 11 0 10.55 0 10S.448 9 1 9H5.05C5.03 9.16 5 9.33 5 9.5C5 10.03 5.12 10.54 5.32 11M6 7H2C1.45 7 1 6.55 1 6S1.45 5 2 5H7.97L6.09 6.87C6.05 6.91 6 6.96 6 7Z" />
+                                </svg>
+                            </div><!--ICONO EMPRESA-->
+                            <div class="header-logo-title">
+                                <span>FAQS</span>
+                            </div><!--TÍTULO-->
+                        </div>
+                    </div>
+
+                    <div class="column"><!--DIV MENÚS (INICIO,RESERVA, CONTACTO) POSIBLIDAD DE HACERLO COMO LISTA NO ORDENADA UL CON CSS-->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+            
+        <main>
+
+            <div class="one-column">
+
+                <div class="column">
+
+                    <form data-url='http://192.168.1.16:8080/api/admin/faqs'>
+
+                        <div class="tabs">
+
+                            <div class="tabs-header">
+
+                                <div class="tab-button active" data-target="#tab-1">FAQs</div>
+
+
+                                <div class="save-button form-send-button">
+                                    
+                                    <svg viewBox="0 0 24 24">
+
+                                        <path fill="currentColor" d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" />
+
+                                    </svg>
+                            
+                                </div>
+
+                                <div class="remove-button">
+                                    
+                                    <svg viewBox="0 0 24 24">
+
+                                        <path fill="currentColor" d="M19.36,2.72L20.78,4.14L15.06,9.85C16.13,11.39 16.28,13.24 15.38,14.44L9.06,8.12C10.26,7.22 12.11,7.37 13.65,8.44L19.36,2.72M5.93,17.57C3.92,15.56 2.69,13.16 2.35,10.92L7.23,8.83L14.67,16.27L12.58,21.15C10.34,20.81 7.94,19.58 5.93,17.57Z" />
+
+                                    </svg>
+
+                                </div>
+
+                                <div class="on-off-button">
+                                    
+
+
+                                    <div class="on-switch-left-button">
+
+                                        <span>ON</span>
+
+                                    </div>
+
+                                    <div class="off-switch-right-button" href="">
+
+
+                                        <span>OFF</span>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="tabs-body">
+
+                                <div id="tab-1" class="tab-content active">
+
+                                    <div class="two-columns">
+
+                                        <div class="column">
+                                            
+                                            <div class="form-element">
+
+                                                <div class="form-element-label">
+
+                                                    <label for="type">Category Name</label>
+
+                                                </div>
+                                                
+                                                <div class="form-element-input">
+
+                                                    <select type="text" name ="name">
+
+                                                        <option value="blank"></option>
+                                                        <option value="category_1">Category 1</option>
+                                                        <option value="category_1">Category 2</option>
+                                                        <option value="category_1">Category 3</option>
+
+                                                    </select>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="column">
+
+                                            <div class="form-element">
+
+                                                <div class="form-element-label">
+
+                                                    <label for="visible">Visible question?</label>
+
+                                                </div>
+                                                
+                                                <div class="form-element-input">
+
+                                                    <select type="number" name ="visible">
+
+                                                        <option value="blank"></option>
+                                                        <option value="1">YES</option>
+                                                        <option value="0">NO</option>
+
+                                                    </select>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                        
+                                    </div>
+
+                                    <div class="one-column">
+
+                                        <div class="column">
+
+                                            <div class="form-element">
+
+                                                <div class="form-element-label">
+
+                                                    <label for="description">Question</label>
+
+                                                </div>
+                                                
+                                                <div class="form-element-input">
+
+                                                    <textarea type="textarea" name="description" class="validate-characters" style="width:100%;min-height: 20vh;" placeholder="Write category description"> </textarea>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </form>
+                </div>
+
+                <div id="notification">
+                                    
+                    <span id="notification-message"> </span>
+
+                </div>
+                
+            </div>
+                
+
+        </main>
+
+        <footer>
+                    
+            <div class="footer">
+
+                <p>@2022</p>
+
+                <p>enlace a una web de verdad</p> 
+
+            </div><!--FOOTER COPYRIGHT-->
+
+        </footer>
+        
+        <script type="module" src="/panel_administracion/javascript/modules/index.js"></script>
+        
+    </body>
+    
+</html>

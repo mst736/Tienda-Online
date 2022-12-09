@@ -1,6 +1,7 @@
 export let renderLogin = () => {
     
     let login = {
+        
         email: "carlossedagambin@gmail.com",
         password: "password"
     }
@@ -20,3 +21,4 @@ export let renderLogin = () => {
         console.log(error);
     });
 }
+

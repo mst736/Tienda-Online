@@ -771,9 +771,11 @@ footer {
   color: hsl(194deg, 89%, 52%);
   cursor: pointer;
   width: 50%;
+}
+.on-switch-left-button.active {
   background-color: red;
 }
-.on-switch-left-button span {
+.on-switch-left-button.active span {
   display: none;
 }
 
@@ -786,8 +788,8 @@ footer {
 .off-switch-right-button span {
   display: none;
 }
-.off-switch-right-button.active span {
-  color: hsl(0deg, 100%, 50%);
+.off-switch-right-button span.active {
+  color: red;
 }
 
 /*# sourceMappingURL=app.css.map */

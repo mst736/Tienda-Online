@@ -11,4 +11,3 @@ form();
 renderLogin();
 formCharactersValidation();
 renderNotification();
-
