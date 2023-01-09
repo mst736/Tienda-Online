@@ -4,7 +4,7 @@ export let form = () => {
 
     let form = document.querySelector('form');
     let formsubmittion = document.querySelector('.form-send-button');
-
+    console.log(formsubmittion);
     if(formsubmittion){
       
         formsubmittion.addEventListener("click", event => {        
@@ -32,6 +32,7 @@ export let form = () => {
                 headers: {
                     'Content-Type': 'application/json',
                     'x-access-token': sessionStorage.getItem('accessToken')
+                    
                 },
                 body: JSON.stringify(formDataJson)
             }).then(response => {
