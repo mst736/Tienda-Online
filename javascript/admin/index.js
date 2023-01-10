@@ -9,4 +9,4 @@ plusMinusButton();
 tabs();
 formCharactersValidation();
 renderNotification();
-form()
+form();

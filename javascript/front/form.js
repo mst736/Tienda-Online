@@ -4,7 +4,8 @@ export let form = () => {
 
     let form = document.querySelector('form');
     let formsubmittion = document.querySelector('.form-send-button');
-    console.log(formsubmittion);
+    let removeButton = document.querySelector('.remove-button');
+
     if(formsubmittion){
       
         formsubmittion.addEventListener("click", event => {        
@@ -37,20 +38,37 @@ export let form = () => {
                 body: JSON.stringify(formDataJson)
             }).then(response => {
                 return response.json();
+
             }).then(data => {
-                
-                document.dispatchEvent(new CustomEvent('message', {
+
+                document.dispatchEvent(new CustomEvent('SuccesMessage', {
                     detail: {
                         text: 'Formulario enviado correctamente',
                         type: 'success'
                     }
                 }));
     
+    
             }).catch(error => {
-                console.log(error);
+
+                console.log(error)
+
+
             });
+
+            console.log(then(data));
     
         });
     }
     
+    if (removeButton) {
+
+        removeButton.addEventListener('click', event => {
+
+            event.preventDefault();
+            console.log("evento on click remove button");
+
+        })
+
+    }
 }

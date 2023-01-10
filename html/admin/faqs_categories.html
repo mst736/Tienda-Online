@@ -33,7 +33,7 @@
                                 </svg>
                             </div><!--ICONO EMPRESA-->
                             <div class="header-logo-title">
-                                <span>IVA</span>
+                                <span>FAQS CATEGORIES</span>
                             </div><!--TÍTULO-->
                         </div>
                     </div>
@@ -51,14 +51,14 @@
 
                 <div class="column">
 
-                    <form data-url='http://192.168.1.16:8080/api/admin/taxes'>
+                    <form data-url='http://192.168.1.16:8080/api/admin/faqs_categories'>
 
                         <div class="tabs">
 
                             <div class="tabs-header">
 
-                                <div class="tab-button active" data-target="#tab-1">IVA</div>
-    
+                                <div class="tab-button active" data-target="#tab-1">FAQS CATEGORIES</div>
+
 
                                 <div class="save-button form-send-button">
                                     
@@ -110,7 +110,7 @@
 
                                 <div id="tab-1" class="tab-content active">
 
-                                    <div class="three-columns">
+                                    <div class="two-columns">
 
                                         <div class="column">
                                             
@@ -118,36 +118,18 @@
 
                                                 <div class="form-element-label">
 
-                                                    <label for="type">Tipo IVA</label>
+                                                    <label for="type">Category Name</label>
 
                                                 </div>
                                                 
                                                 <div class="form-element-input">
 
-                                                    <input type="number" name="type">
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="column">
-
-                                            <div class="form-element">
-
-                                                <div class="form-element-label">
-
-                                                    <label for="valid">Valido</label>
-
-                                                </div>
-                                                
-                                                <div class="form-element-input">
-
-                                                    <select type="number" name ="valid">
+                                                    <select type="text" name ="name">
 
                                                         <option value="blank"></option>
-                                                        <option value="1">1</option>
-                                                        <option value="0">0</option>
+                                                        <option value="category_1">Category 1</option>
+                                                        <option value="category_1">Category 2</option>
+                                                        <option value="category_1">Category 3</option>
 
                                                     </select>
 
@@ -155,10 +137,55 @@
 
                                             </div>
                                         </div>
+                                        <div class="column">
+
+                                            <div class="form-element">
+
+                                                <div class="form-element-label">
+
+                                                    <label for="visible">Visible Category?</label>
+
+                                                </div>
+                                                
+                                                <div class="form-element-input">
+
+                                                    <select type="number" name ="visible">
+
+                                                        <option value="blank"></option>
+                                                        <option value="1">YES</option>
+                                                        <option value="0">NO</option>
+
+                                                    </select>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                         
                                     </div>
 
-                                  
+                                    <div class="one-column">
+
+                                        <div class="column">
+
+                                            <div class="form-element">
+
+                                                <div class="form-element-label">
+
+                                                    <label for="description">Category description</label>
+
+                                                </div>
+                                                
+                                                <div class="form-element-input">
+
+                                                    <textarea type="textarea" name="description" class="validate-characters" style="width:100%;min-height: 20vh;" placeholder="Write category description"> </textarea>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                 </div>
                             </div>
                             
@@ -190,7 +217,7 @@
 
         </footer>
         
-        <script type="module" src="/panel_administracion/javascript/modules/index.js"></script>
+        <script type="module" src="/javascript/admin/index.js"></script>
         
     </body>
     
